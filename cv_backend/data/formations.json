@@ -1,0 +1,201 @@
+[
+  {
+    "nom": "DFW FS",
+    "certification": "en cours",
+    "ecole": "Fabrique Numérique Paloise",
+    "dateDebut": "14 avril 2025",
+    "dateFin": "21 septembre 2025",
+    "description": "...",
+    "lien": "https://fabriquenumerique.fr/",
+    "domaine": "Gestion de projet, WebDesign",
+    "image": "",
+    "motsCles": [
+      "développement",
+      "web",
+      "fullstack",
+      "webdesign",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "MERN",
+      "HTML",
+      "CSS",
+      "UX UI design",
+      "responsive design",
+      "Git",
+      "API REST",
+      "hébergement web",
+      "DevOps",
+      "Agile Scrum",
+      "gestion de projet numérique",
+      "déploiement"
+    ]
+  },
+  {
+    "nom": "CAP Couture",
+    "certification": "CAP mention Très bien",
+    "ecole": "Lycée André Campa",
+    "dateDebut": "septembre 2022",
+    "dateFin": "juin 2023",
+    "description": "...",
+    "lien": "https://lyceecampa.fr/",
+    "domaine": "Couture / Métiers d'art",
+    "image": "",
+    "motsCles": [
+      "CAP couture",
+      "techniques de couture",
+      "couture artisanale",
+      "contrôle qualité textile",
+      "machines industrielles",
+      "lecture de patron",
+      "matières textiles",
+      "montage vêtement"
+    ]
+  },
+  {
+    "nom": "Styliste-Créateur de Mode",
+    "certification": "",
+    "ecole": "Lignes & Formations",
+    "dateDebut": "novembre 2021",
+    "dateFin": "novembre 2022",
+    "description": "...",
+    "lien": "https://www.lignes-formations.com/formation/mode/styliste-mode",
+    "domaine": "Mode / Design",
+    "image": "",
+    "motsCles": [
+      "stylisme de mode",
+      "création de collection",
+      "dessins techniques",
+      "prototypage textile",
+      "culture mode",
+      "croquis de mode",
+      "dessin technique vêtement",
+      "communication visuelle"
+    ]
+  },
+  {
+    "nom": "Graphisme & Design - Option Bandes Dessinées",
+    "certification": "",
+    "ecole": "Lignes & Formations",
+    "dateDebut": "novembre 2018",
+    "dateFin": "Decembre 2020",
+    "description": "...",
+    "lien": "https://www.lignes-formations.com/formation/graphisme",
+    "domaine": "Design graphique",
+    "image": "",
+    "motsCles": [
+      "design graphique",
+      "webdesign",
+      "bande dessinée",
+      "création visuelle",
+      "Adobe Creative Suite",
+      "projet créatif",
+      "affiches et supports print",
+      "identité visuelle"
+    ]
+  },
+  {
+    "nom": "Master ADE, Gestion de projets touristiques",
+    "certification": "Master Administration des Entreprises mention assez bien",
+    "ecole": "UCO Bretagne Sud",
+    "dateDebut": "septembre 2012",
+    "dateFin": "Septembre 2014",
+    "description": "...",
+    "lien": "https://vannes.uco.fr/fr",
+    "domaine": "Tourisme / Gestion de projet",
+    "image": "",
+    "motsCles": [
+      "gestion de projets touristiques",
+      "e-tourisme",
+      "marketing touristique",
+      "communication touristique",
+      "diagnostic territorial",
+      "développement durable",
+      "pilotage de projet",
+      "ingénierie touristique"
+    ]
+  },
+  {
+    "nom": "Licence professionnelle, valorisation des produits du terroir",
+    "certification": "Licence professionnelle mention bien",
+    "ecole": "Université de Pau et des Pays de l'Adour / CFPPA Montardon",
+    "dateDebut": "septembre 2011",
+    "dateFin": "juin 2012",
+    "description": "...",
+    "lien": "https://formation.univ-pau.fr/fr/catalogue/...",
+    "domaine": "Agroalimentaire / Gestion de projet",
+    "image": "",
+    "motsCles": [
+      "produits du terroir",
+      "communication agroalimentaire",
+      "marketing local",
+      "stratégie territoriale",
+      "commercialisation circuits courts",
+      "valorisation agricole",
+      "gestion de projet"
+    ]
+  },
+  {
+    "nom": "BTS technico-commercial, agro-alimentaire",
+    "certification": "BTS mention bien",
+    "ecole": "École supérieure La Raque",
+    "dateDebut": "septembre 2009",
+    "dateFin": "juin 2011",
+    "description": "...",
+    "lien": "https://www.laraque.com/formations/btsa/tc/",
+    "domaine": "Agroalimentaire / Commerce",
+    "image": "",
+    "motsCles": [
+      "vente agroalimentaire",
+      "technico-commercial",
+      "marketing produit",
+      "communication professionnelle",
+      "prospection commerciale",
+      "analyse économique",
+      "salons professionnels"
+    ]
+  },
+  {
+    "nom": "BTS Viticulture Œnologie, vigne et vin",
+    "certification": "BTS",
+    "ecole": "LEGTA Bordeaux Blanquefort",
+    "dateDebut": "septembre 2007",
+    "dateFin": "juin 2009",
+    "description": "...",
+    "lien": "https://www.lyceeblanquefort.formagri33.com/...",
+    "domaine": "Viticulture / Oenologie/ gestion de projet",
+    "image": "",
+    "motsCles": [
+      "viticulture",
+      "œnologie",
+      "vinification",
+      "production vitivinicole",
+      "qualité hygiène sécurité",
+      "transition agroécologique",
+      "gestion exploitation viticole"
+    ]
+  },
+  {
+    "nom": "BAC Technologique STPA, Sciences et technologies alimentaires",
+    "certification": "BAC mention assez bien",
+    "ecole": "LEGTA Pau Montardon",
+    "dateDebut": "Septembre 2005",
+    "dateFin": "juin 2007",
+    "description": "...",
+    "lien": "https://agrocampus64.fr/...",
+    "domaine": "Sciences Alimentaires",
+    "image": "",
+    "motsCles": [
+      "sciences alimentaires",
+      "microbiologie",
+      "biochimie",
+      "technologie agroalimentaire",
+      "contrôle qualité",
+      "sécurité alimentaire",
+      "procédés industriels",
+      "traçabilité"
+    ]
+  }
+]

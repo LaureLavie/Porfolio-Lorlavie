@@ -1,0 +1,172 @@
+[
+  {
+    "nom": "Écriture du roman 'L'Antre Deux Âmes'",
+    "dateDebut": "janvier 2024",
+    "dateFin": "septembre 2024",
+    "description": "Roman initiatique enrichi d’éléments immersifs : visuels, clips, musiques. Utilisation de plusieurs IA créatives et réseaux sociaux.",
+    "lien": "",
+    "competence": "Écriture, Multimédia, IA générative, Réseaux sociaux",
+    "domaine": "Création littéraire / Expérience immersive",
+    "image": "../src/assets/images/roman1.png",
+    "motsCles": [
+      "roman multimédia",
+      "IA générative",
+      "écriture immersive",
+      "storytelling interactif",
+      "création transmedia"
+    ]
+  },
+  {
+    "nom": "Création site web Gîte Lorlavie",
+    "dateDebut": "novembre 2023",
+    "dateFin": "decembre 2023",
+    "description": "Développement et mise en ligne d’un site web via Hostinger.",
+    "lien": "https://lorlavie.com",
+    "competence": "Web design, Hostinger",
+    "domaine": "Communication / Hébergement",
+    "image": "../src/assets/images/logo.jpg",
+    "motsCles": [
+      "site internet hébergement",
+      "site WordPress Hostinger",
+      "référencement gîte",
+      "web design tourisme",
+      "création site gîte"
+    ]
+  },
+  {
+    "nom": "Écriture et publication du tome 2 'L'Antre deux Mondes'",
+    "dateDebut": "décembre 2022",
+    "dateFin": "mars 2023",
+    "description": "Création, écriture, design et publication de deux tomes autobiographiques.",
+    "lien": "",
+    "competence": "Écriture créative, Design éditorial",
+    "domaine": "Littérature personnelle",
+    "image": "../src/assets/images/tome2.png",
+    "motsCles": [
+      "écriture autobiographique",
+      "édition indépendante",
+      "design de livre",
+      "auteure autoéditée",
+      "publication print"
+    ]
+  },
+  {
+    "nom": "Création & Design de motifs textiles",
+    "dateDebut": "janvier 2023",
+    "dateFin": "",
+    "description": "Motifs textiles, impression textile et vente sur Etsy.",
+    "lien": "",
+    "competence": "design textile, e-commerce",
+    "domaine": "Textile / Création numérique",
+    "image": "../src/assets/images/lclogo.jpg",
+    "motsCles": [
+      "motifs textiles",
+      "design textile numérique",
+      "impression textile personnalisée",
+      "vente sur Etsy",
+      "création design"
+    ]
+  },
+  {
+    "nom": "Écriture et publication du tome 1 'Mon Antre deux Mondes'",
+    "dateDebut": "décembre 2021",
+    "dateFin": "décembre 2022",
+    "description": "Création, écriture, design et publication de deux tomes autobiographiques.",
+    "lien": "",
+    "competence": "Écriture créative, Design éditorial",
+    "domaine": "Littérature personnelle",
+    "image": "../src/assets/images/tome1.png",
+    "motsCles": [
+      "écriture autobiographique",
+      "édition indépendante",
+      "design de livre",
+      "auteure autoéditée",
+      "publication print"
+    ]
+  },
+  {
+    "nom": "Création de supports imprimés pour un Mariage Martiniquais",
+    "dateDebut": "janvier 2020",
+    "dateFin": "juin 2020",
+    "description": "faire-part de mariage, plans de table, supports graphiques.",
+    "lien": "",
+    "competence": "PAO, Graphisme",
+    "domaine": "Design / Communication",
+    "image": "",
+    "motsCles": [
+      "création graphique",
+      "PAO",
+      "print design",
+      "identité visuelle",
+      "supports imprimés"
+    ]
+  },
+  {
+    "nom": "Création d'affiches",
+    "dateDebut": "juin 2022",
+    "dateFin": "",
+    "description": "  création d'affiches pour le groupe de chant 'Los Esbarrits'",
+    "lien": "http://esbarrits.cardesse.fr/",
+    "competence": "Logo design, Canva",
+    "domaine": "Communication visuelle",
+    "image": "",
+    "motsCles": [
+      "identité graphique",
+      "affiche événementielle",
+      "branding visuel",
+      "Canva"
+    ]
+  },
+
+  {
+    "nom": "Création graphique pour le Gîte Lorlavie",
+    "dateDebut": "janvier 2022",
+    "dateFin": "fevrier 2022",
+    "description": "Design de logo pour le gîte Lorlavie, Charte graphique",
+    "lien": "https://lorlavie.com/",
+    "competence": "Logo design, Canva",
+    "domaine": "Communication visuelle",
+    "image": "",
+    "motsCles": [
+      "création de logo",
+      "identité graphique",
+      "affiche événementielle",
+      "branding visuel",
+      "Canva"
+    ]
+  },
+  {
+    "nom": "Création des supports de communication APE Les Castors",
+    "dateDebut": "septembre 2022",
+    "dateFin": "juin 2024",
+    "description": "Création d’affiches sur Canva pour l’association des parents d’élèves.",
+    "lien": "",
+    "competence": "Canva, Communication associative",
+    "domaine": "Graphisme / Vie scolaire",
+    "image": "",
+    "motsCles": [
+      "communication associative",
+      "affiches Canva",
+      "supports visuels école",
+      "création graphique bénévole",
+      "association scolaire"
+    ]
+  },
+  {
+    "nom": "Création d'un site web Maison d'Hôtes Pesaulhe",
+    "dateDebut": "janvier 2018",
+    "dateFin": "janvier 2018",
+    "description": "Création d’un site web sur Wix pour une maison d’hôtes à Monein.",
+    "lien": "https://pesaulhe.wixsite.com/pesaulhe",
+    "competence": "Wix, Web design",
+    "domaine": "Communication / Tourisme",
+    "image": "",
+    "motsCles": [
+      "création site Wix",
+      "site vitrine tourisme",
+      "hébergement touristique",
+      "design web",
+      "site maison d'hôtes"
+    ]
+  }
+]

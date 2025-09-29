@@ -1,0 +1,92 @@
+[
+  {
+    "nom": "Piano, solfège",
+    "niveau": "Avancé",
+    "nbreAnnee": "15 ans",
+    "categorie": "Musique",
+    "image": "",
+    "description": "Ecole de Musique de Mont",
+    "motsCles": [
+      "cours de piano",
+      "formation musicale",
+      "solfège avancé",
+      "musicienne classique",
+      "éducation musicale"
+    ]
+  },
+  {
+    "nom": "clarinette",
+    "niveau": "Intermédiaire",
+    "nbreAnnee": "5 ans",
+    "categorie": "Musique",
+    "image": "",
+    "description": "Ecole de Musique de Mont",
+    "motsCles": [
+      "clarinette intermédiaire",
+      "musique classique",
+      "pratique instrumentale",
+      "répertoire orchestral",
+      "apprentissage clarinette"
+    ]
+  },
+  {
+    "nom": " guitare",
+    "niveau": "débutant",
+    "nbreAnnee": "2 ans",
+    "categorie": "Musique",
+    "image": "",
+    "description": "Autodictate",
+    "motsCles": [
+      "guitare acoustique",
+      "auto-apprentissage guitare",
+      "accords débutants",
+      "initiation guitare",
+      "technique musicale"
+    ]
+  },
+  {
+    "nom": "chant",
+    "niveau": "Intermédiaire",
+    "nbreAnnee": "5 ans",
+    "categorie": "Musique",
+    "image": "",
+    "description": "Chorale & Musique Liturgique Bayonne",
+    "motsCles": [
+      "chant choral",
+      "musique liturgique",
+      "technique vocale",
+      "voix intermédiaire",
+      "interprétation chantée"
+    ]
+  },
+  {
+    "nom": "dessin",
+    "niveau": "Avancé",
+    "nbreAnnee": "20 ans",
+    "categorie": "Art",
+    "image": "",
+    "description": "Autodictate",
+    "motsCles": [
+      "dessin artistique",
+      "illustration créative",
+      "croquis à main levée",
+      "expression visuelle",
+      "techniques graphiques"
+    ]
+  },
+  {
+    "nom": "couture",
+    "niveau": "Intermédiaire",
+    "nbreAnnee": "5 ans",
+    "categorie": "Création artistique",
+    "image": "",
+    "description": "Autodictate",
+    "motsCles": [
+      "couture artisanale",
+      "création textile",
+      "modèle sur mesure",
+      "techniques de couture",
+      "mode fait main"
+    ]
+  }
+]

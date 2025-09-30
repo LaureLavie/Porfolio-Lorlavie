@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-transparent relative pt-10 pb-6 mt-auto overflow-hidden">
+    <footer className="w-full bg-transparent relative pt-10 pb-6 mt-auto overflow-hidden display-flex align-center justify-center">
       {/* Image décorative en fond */}
       <img
         src="/src/assets/images/Ellipse2.png"
@@ -22,11 +22,11 @@ export default function Footer() {
       />
 
       {/* Contenu du footer */}
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-8 lg:px-60 items-start justify-items-center lg:justify-items-start max-w-7xl mx-auto">
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-8 lg:px-60 items-center justify-items-center lg:justify-items-center max-w-7xl mx-auto">
         {/* Colonne 1 - Contact */}
         <div className="flex flex-col gap-3 items-center sm:items-start w-full">
           <h3 className="font-bold text-[#795A3C] text-lg mb-2 font-josefin">
-            📞 Contact
+            Contact
           </h3>
           <div className="flex gap-2 items-center font-semibold text-[#795A3C] text-sm md:text-base">
             <img
@@ -56,11 +56,11 @@ export default function Footer() {
         </div>
 
         {/* Colonne 2 - Adresse */}
-        <div className="flex flex-col gap-3 items-center sm:items-start w-full">
+        <div className="flex flex-col gap-3 items-center sm:items-center w-full">
           <h3 className="font-bold text-[#795A3C] text-lg mb-2 font-josefin">
-            📍 Adresse
+            Adresse
           </h3>
-          <div className="flex flex-col items-center sm:items-start font-semibold text-[#795A3C] text-sm md:text-base">
+          <div className="flex flex-col items-center sm:items-center font-semibold text-[#795A3C] text-sm md:text-base">
             <img
               src="/src/assets/images/location.png"
               alt=""
@@ -75,11 +75,11 @@ export default function Footer() {
         </div>
 
         {/* Colonne 3 - Réseaux sociaux */}
-        <div className="flex flex-col gap-3 items-center sm:items-start w-full">
-          <h3 className="font-bold text-[#795A3C] text-lg mb-2 font-josefin">
-            🌐 Réseaux
+        <div className="flex flex-col gap-3 justify-center items-center sm:items-center w-[100dvw] sm:w-full">
+          <h3 className="font-bold text-[#795A3C] text-lg mb-2 font-josefin text-center">
+            Réseaux
           </h3>
-          <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
+          <div className="flex flex-wrap gap-3 items-center justify-center sm:justify-center">
             <a
               href="https://github.com/LaureLavie"
               target="_blank"

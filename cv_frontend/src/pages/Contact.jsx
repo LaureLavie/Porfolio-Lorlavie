@@ -51,7 +51,7 @@ export default function Contact() {
           className="w-full max-w-lg flex flex-col gap-6 bg-[#DAB692] rounded-3xl p-6 md:p-10 shadow-[8px_8px_0px_0px_rgba(90,70,50,0.25)] font-josefin"
         >
           <h1 className="text-center text-2xl md:text-3xl text-[#795A3C] font-bold">
-            📬 Contactez-Moi
+            Contactez-Moi
           </h1>
 
           {error && (
@@ -119,7 +119,7 @@ export default function Contact() {
             disabled={loading}
             className="rounded-2xl bg-black text-[#F9E5C6] text-lg md:text-xl font-bold px-8 py-3 md:py-4 mt-2 shadow-[6px_6px_0px_0px_rgba(90,70,50,0.25)] hover:bg-[#795A3C] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? "📤 Envoi en cours..." : "📨 Envoyer le Message"}
+            {loading ? "📤 Envoi en cours..." : " Envoyer le Message"}
           </button>
         </form>
       </div>

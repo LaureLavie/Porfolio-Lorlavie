@@ -8,7 +8,9 @@ const verifyToken = (req, res, next) => {
     });
   try {
     const decode = jwt.verify(token, process.env.JWT_SECRET);
-    req.adminId = decode.adminId;
+    // Le token peut contenir la propriété `id` (utilisée par le controller)
+    // ou `adminId` selon la génération. On accepte les deux pour robustesse.
+    req.adminId = decode.id || decode.adminId || null;
     next();
   } catch (err) {
     res.status(401).json({

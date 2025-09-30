@@ -10,7 +10,7 @@ const Formations = () => {
   const [formationsData, setFormationsData] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_URL}/formations`)
+    fetch(`${API_URL}/formation`)
       .then((res) => res.json())
       .then((data) => setFormationsData(data))
       .catch((err) => console.error("Erreur chargement formations :", err));

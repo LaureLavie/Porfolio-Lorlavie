@@ -4,35 +4,57 @@ export default function CardLoisir({
   nbreAnnee,
   categorie,
   image,
+  description,
 }) {
   return (
-    <div className="bg-[#F9E5C6]/80 rounded-2xl shadow-2xl p-6 flex flex-col items-center w-full max-w-md">
-      {/* Image ronde en haut */}
-      <div className="w-28 h-28 md:w-32 md:h-32 rounded-full bg-[#F9E5C6] flex items-center justify-center overflow-hidden shadow-2xl mb-4">
-        {image ? (
-          <img src={image} alt={nom} className="w-fit h-fit object-cover" />
-        ) : (
-          <span className="text-[#795A3C] text-4xl font-bold">🎵</span>
+    <div className="bg-[#F9E5C6]/90 rounded-3xl p-4 md:p-6 shadow-2xl hover:scale-105 transition-transform font-josefin flex flex-col items-center text-center">
+      {/* Image */}
+      {image && (
+        <div className="w-24 h-24 md:w-32 md:h-32 mb-4">
+          <img
+            src={image}
+            alt={nom}
+            className="w-full h-full object-cover rounded-full shadow-lg"
+          />
+        </div>
+      )}
+
+      {/* Icône par défaut */}
+      {!image && (
+        <div className="text-5xl md:text-6xl mb-4">
+          {categorie === "Musique" ? "🎵" : categorie === "Art" ? "🎨" : "✨"}
+        </div>
+      )}
+
+      {/* Nom */}
+      <h3 className="text-lg md:text-xl font-bold text-[#795A3C] mb-2">
+        {nom}
+      </h3>
+
+      {/* Catégorie */}
+      {categorie && (
+        <span className="inline-block bg-[#795A3C] text-white px-3 py-1 rounded-full text-xs md:text-sm mb-2">
+          {categorie}
+        </span>
+      )}
+
+      {/* Niveau et années */}
+      <div className="flex flex-wrap justify-center gap-2 mb-3">
+        {niveau && (
+          <span className="bg-[#DAB692] text-[#795A3C] px-3 py-1 rounded-full text-xs md:text-sm font-semibold">
+            📊 {niveau}
+          </span>
+        )}
+        {nbreAnnee && (
+          <span className="bg-[#DAB692] text-[#795A3C] px-3 py-1 rounded-full text-xs md:text-sm font-semibold">
+            ⏱️ {nbreAnnee}
+          </span>
         )}
       </div>
-      {/* Contenu */}
-      <h2 className="text-xl md:text-2xl font-bold text-black text-center mb-1 font-josefin">
-        {nom}
-      </h2>
-      {categorie && (
-        <div className="text-[#795A3C] text-xs mb-1 font-josefin">
-          {categorie}
-        </div>
-      )}
-      {niveau && (
-        <div className="text-[#795A3C] text-sm mb-1 font-josefin">
-          Niveau : {niveau}
-        </div>
-      )}
-      {nbreAnnee && (
-        <div className="text-[#795A3C] text-sm mb-1 font-josefin">
-          Expérience : {nbreAnnee}
-        </div>
+
+      {/* Description */}
+      {description && (
+        <p className="text-sm text-gray-700 mt-2">{description}</p>
       )}
     </div>
   );

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import FormFormation from "../components/FormFormation";
-import FormExperience from "../components/FormExperience";
-import FormProjet from "../components/FormProjet";
-import FormLoisir from "../components/FormLoisir";
+import CardFormation from "../components/CardFormation";
+import BoxExperience from "../components/BoxExperience";
+import BoxProjet from "../components/BoxProjet";
+import CardLoisir from "../components/CardLoisir";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -35,7 +35,7 @@ const AdminDashboard = () => {
   // Chargement initial
   useEffect(() => {
     const token = localStorage.getItem("token");
-    fetch("/api/admin/dashboard", {
+    fetch(`${API_URL}/admin/dashboard`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
     })
@@ -46,16 +46,16 @@ const AdminDashboard = () => {
 
   // Charger les listes
   useEffect(() => {
-    fetch(`${API_URL}/formations`)
+    fetch(`${API_URL}/formation`)
       .then((res) => res.json())
       .then(setFormations);
-    fetch(`${API_URL}/experiences`)
+    fetch(`${API_URL}/experience`)
       .then((res) => res.json())
       .then(setExperiences);
-    fetch(`${API_URL}/projets`)
+    fetch(`${API_URL}/projet`)
       .then((res) => res.json())
       .then(setProjets);
-    fetch(`${API_URL}/loisirs`)
+    fetch(`${API_URL}/loisir`)
       .then((res) => res.json())
       .then(setLoisirs);
   }, []);
@@ -64,8 +64,8 @@ const AdminDashboard = () => {
   const handleSaveFormation = (formation) => {
     const method = formation._id ? "PUT" : "POST";
     const url = formation._id
-      ? `${API_URL}/formations/${formation._id}`
-      : `${API_URL}/formations`;
+      ? `${API_URL}/formation/${formation._id}`
+      : `${API_URL}/formation`;
     fetch(url, {
       method,
       headers: { "Content-Type": "application/json" },
@@ -75,14 +75,14 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormFormation(false);
         setEditFormation(null);
-        fetch(`${API_URL}/formations`)
+        fetch(`${API_URL}/formation`)
           .then((res) => res.json())
           .then(setFormations);
       });
   };
   const handleDeleteFormation = (id) => {
     if (window.confirm("Supprimer cette formation ?")) {
-      fetch(`${API_URL}/formations/${id}`, { method: "DELETE" }).then(() =>
+      fetch(`${API_URL}/formation/${id}`, { method: "DELETE" }).then(() =>
         setFormations(formations.filter((f) => f._id !== id))
       );
     }
@@ -92,8 +92,8 @@ const AdminDashboard = () => {
   const handleSaveExperience = (experience) => {
     const method = experience._id ? "PUT" : "POST";
     const url = experience._id
-      ? `${API_URL}/experiences/${experience._id}`
-      : `${API_URL}/experiences`;
+      ? `${API_URL}/experience/${experience._id}`
+      : `${API_URL}/experience`;
     fetch(url, {
       method,
       headers: { "Content-Type": "application/json" },
@@ -103,14 +103,14 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormExperience(false);
         setEditExperience(null);
-        fetch(`${API_URL}/experiences`)
+        fetch(`${API_URL}/experience`)
           .then((res) => res.json())
           .then(setExperiences);
       });
   };
   const handleDeleteExperience = (id) => {
     if (window.confirm("Supprimer cette expérience ?")) {
-      fetch(`${API_URL}/experiences/${id}`, { method: "DELETE" }).then(() =>
+      fetch(`${API_URL}/experience/${id}`, { method: "DELETE" }).then(() =>
         setExperiences(experiences.filter((e) => e._id !== id))
       );
     }
@@ -120,8 +120,8 @@ const AdminDashboard = () => {
   const handleSaveProjet = (projet) => {
     const method = projet._id ? "PUT" : "POST";
     const url = projet._id
-      ? `${API_URL}/projets/${projet._id}`
-      : `${API_URL}/projets`;
+      ? `${API_URL}/projet/${projet._id}`
+      : `${API_URL}/projet`;
     fetch(url, {
       method,
       headers: { "Content-Type": "application/json" },
@@ -131,14 +131,14 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormProjet(false);
         setEditProjet(null);
-        fetch(`${API_URL}/projets`)
+        fetch(`${API_URL}/projet`)
           .then((res) => res.json())
           .then(setProjets);
       });
   };
   const handleDeleteProjet = (id) => {
     if (window.confirm("Supprimer ce projet ?")) {
-      fetch(`${API_URL}/projets/${id}`, { method: "DELETE" }).then(() =>
+      fetch(`${API_URL}/projet/${id}`, { method: "DELETE" }).then(() =>
         setProjets(projets.filter((p) => p._id !== id))
       );
     }
@@ -148,8 +148,8 @@ const AdminDashboard = () => {
   const handleSaveLoisir = (loisir) => {
     const method = loisir._id ? "PUT" : "POST";
     const url = loisir._id
-      ? `${API_URL}/loisirs/${loisir._id}`
-      : `${API_URL}/loisirs`;
+      ? `${API_URL}/loisir/${loisir._id}`
+      : `${API_URL}/loisir`;
     fetch(url, {
       method,
       headers: { "Content-Type": "application/json" },
@@ -159,14 +159,14 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormLoisir(false);
         setEditLoisir(null);
-        fetch(`${API_URL}/loisirs`)
+        fetch(`${API_URL}/loisir`)
           .then((res) => res.json())
           .then(setLoisirs);
       });
   };
   const handleDeleteLoisir = (id) => {
     if (window.confirm("Supprimer ce loisir ?")) {
-      fetch(`${API_URL}/loisirs/${id}`, { method: "DELETE" }).then(() =>
+      fetch(`${API_URL}/loisir/${id}`, { method: "DELETE" }).then(() =>
         setLoisirs(loisirs.filter((p) => p._id !== id))
       );
     }

@@ -97,9 +97,7 @@ export default function Navbar() {
                 location.pathname === link.path
                   ? "bg-[#436F59] text-white"
                   : `${link.color} ${
-                      link.color.includes("black")
-                        ? "text-white"
-                        : "text-[#795A3C]"
+                      link.color.includes("black") ? "text-white" : "text-black"
                     }`
               }`}
               onClick={() => setOpen(false)}

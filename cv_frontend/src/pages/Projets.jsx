@@ -10,7 +10,7 @@ const Projets = () => {
   const [projetsData, setProjetsData] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_URL}/projets`)
+    fetch(`${API_URL}/projet`)
       .then((res) => res.json())
       .then((data) => setProjetsData(data))
       .catch((err) => console.error("Erreur chargement projets :", err));

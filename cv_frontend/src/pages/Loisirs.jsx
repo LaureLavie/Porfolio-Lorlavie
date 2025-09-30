@@ -10,7 +10,7 @@ const Loisirs = () => {
   const [loisirsData, setLoisirsData] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_URL}/loisirs`)
+    fetch(`${API_URL}/loisir`)
       .then((res) => res.json())
       .then((data) => setLoisirsData(data))
       .catch((err) => console.error("Erreur chargement loisirs :", err));

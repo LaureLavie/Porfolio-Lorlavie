@@ -4,51 +4,99 @@ export default function BoxExperience({
   dateDebut,
   dateFin,
   description,
-  lien,
+  lieu,
   secteur,
+  lien,
   image,
+  bgColor = "bg-[#946B47]/90",
+  titleColor = "text-white",
 }) {
+  // Formatage des dates
+  function formatDateFR(dateStr) {
+    if (!dateStr) return "";
+    const d = new Date(dateStr);
+    if (isNaN(d)) return dateStr;
+    const day = String(d.getDate()).padStart(2, "0");
+    const month = String(d.getMonth() + 1).padStart(2, "0");
+    const year = d.getFullYear();
+    return `${day}-${month}-${year}`;
+  }
+
+  // Bloc date stylé
+  const dateBlock = (
+    <span
+      className="flex items-center gap-1 bg-white/30 border border-white/60 px-4 py-1 rounded-xl shadow-sm font-semibold text-[#946B47] text-sm tracking-wide"
+      style={{ letterSpacing: "1px" }}
+    >
+      <span role="img" aria-label="calendar">
+        📅
+      </span>
+      {formatDateFR(dateDebut)}
+      {dateFin && `  —  ${formatDateFR(dateFin)}`}
+    </span>
+  );
+
   return (
-    <div className="bg-[#946B47]/70 rounded-4xl shadow-2xl p-6 md:p-10 flex flex-col md:flex-row gap-8 max-w-4xl items-center">
-      {/* Colonne gauche : titre, entreprise, dates */}
-      <div className="flex flex-col items-center gap-2 w-[300px] text-center">
-        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full flex items-center justify-center overflow-hidden border-4 border-[#795A3C] shadow-xl mb-2">
-          {image ? (
-            <img src={image} alt={nom} className="w-fit h-fit object-contain" />
-          ) : (
-            <span className="text-[#795A3C] text-6xl font-bold">📜</span>
-          )}
-        </div>
-        <h2 className="text-xl md:text-2xl font-bold text-[#795A3C] text-center mb-1 font-josefin">
-          {poste}
-        </h2>
-        <div className="text-white text-base font-semibold">{entreprise}</div>
-        <div className="text-white text-sm font-josefin italic">
-          {dateDebut} {dateFin ? `- ${dateFin}` : "- aujourd'hui"}
-        </div>
-        {secteur && (
-          <div className="text-[#F9E5C6] text-xs mt-2 font-josefin">
-            {secteur}
+    <div
+      className={`${bgColor} rounded-3xl p-4 md:p-6 lg:p-8 shadow-2xl w-full max-w-4xl font-josefin`}
+    >
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+        {/* Image */}
+        {image && (
+          <div className="w-full md:w-32 lg:w-40 h-32 lg:h-40 flex-shrink-0">
+            <img
+              src={image}
+              alt={poste}
+              className="w-full h-full object-cover rounded-2xl shadow-lg"
+            />
           </div>
         )}
-        {lien && (
-          <a
-            href={lien}
-            className="text-[#F9E5C6] text-sm underline mt-2"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* Contenu */}
+        <div className="flex-1">
+          <h3
+            className={`text-xl md:text-2xl lg:text-3xl font-bold ${titleColor} mb-2`}
           >
-            Voir l'entreprise
-          </a>
-        )}
-      </div>
-      {/* Colonne droite : description */}
-      <div className="flex-1 flex flex-col gap-4 text-justify">
-        {description && (
-          <p className="text-[#795A3C] text-base md:text-lg font-josefin">
-            {description}
+            {poste}
+          </h3>
+          <p
+            className={`text-base md:text-lg font-semibold ${titleColor} mb-1`}
+          >
+            {entreprise}
           </p>
-        )}
+
+          {/* Dates et lieu */}
+          <div className="flex flex-wrap gap-2 text-xs md:text-sm text-white/90 mb-3">
+            {dateDebut && dateBlock}
+            {lieu && (
+              <span className="bg-white/20 px-3 py-1 rounded-full">
+                📍 {lieu}
+              </span>
+            )}
+            {secteur && (
+              <span className="bg-white/20 px-3 py-1 rounded-full">
+                🏢 {secteur}
+              </span>
+            )}
+          </div>
+
+          {description && (
+            <p className="text-sm md:text-base text-white/95 leading-relaxed mb-4">
+              {description}
+            </p>
+          )}
+
+          {lien && (
+            <a
+              href={lien}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-[#946B47] px-4 py-2 rounded-lg font-semibold hover:bg-[#F9E5C6] transition text-sm md:text-base"
+            >
+              🔗 En savoir plus
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

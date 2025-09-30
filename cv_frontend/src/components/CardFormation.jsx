@@ -9,46 +9,87 @@ export default function CardFormation({
   domaine,
   image,
 }) {
+  // Formatage des dates
+  function formatDateFR(dateStr) {
+    if (!dateStr) return "";
+    const d = new Date(dateStr);
+    if (isNaN(d)) return dateStr;
+    const day = String(d.getDate()).padStart(2, "0");
+    const month = String(d.getMonth() + 1).padStart(2, "0");
+    const year = d.getFullYear();
+    return `${day}-${month}-${year}`;
+  }
+
+  // Bloc date stylé
+  const dateBlock = (
+    <span
+      className="flex items-center gap-1 bg-white/30 border border-white/60 px-4 py-1 rounded-xl shadow-sm font-semibold text-[#946B47] text-sm tracking-wide"
+      style={{ letterSpacing: "1px" }}
+    >
+      <span role="img" aria-label="calendar">
+        📅
+      </span>
+      {formatDateFR(dateDebut)}
+      {dateFin && `  —  ${formatDateFR(dateFin)}`}
+    </span>
+  );
+
   return (
-    <div className="bg-[#DAB692]/80 rounded-2xl shadow-2xl p-6 flex flex-col items-center">
-      <div className="w-28 h-28 md:w-32 md:h-32 rounded-full flex items-center justify-center overflow-hidden shadow-lg mb-4 border-2 border-[#795A3C]">
-        {image ? (
-          <img src={image} alt={nom} className="w-fit h-fit object-contain" />
-        ) : (
-          <span className="text-[#795A3C] text-4xl font-bold">🎓</span>
-        )}
-      </div>
-      <h2 className="text-xl md:text-2xl font-bold text-[#795A3C] text-center mb-1 font-josefin">
+    <div className="bg-[#DAB692]/90 rounded-3xl p-4 md:p-6 shadow-2xl hover:scale-105 transition-transform font-josefin flex flex-col">
+      {/* Image */}
+      {image && (
+        <div className="w-full h-32 md:h-40 mb-4">
+          <img
+            src={image}
+            alt={nom}
+            className="w-full h-full object-cover rounded-2xl shadow-lg"
+          />
+        </div>
+      )}
+
+      {/* Titre */}
+      <h3 className="text-lg md:text-xl font-bold text-[#795A3C] mb-2">
         {nom}
-      </h2>
+      </h3>
+
+      {/* Certification */}
       {certification && (
-        <div className="text-[#946B47] text-sm mb-1 font-semibold">
-          {certification}
-        </div>
+        <p className="text-sm md:text-base font-semibold text-[#946B47] mb-2">
+          🎓 {certification}
+        </p>
       )}
-      <div className="text-black text-base mb-1 font-josefin">{ecole}</div>
-      <div className="text-black text-sm mb-2 font-josefin italic">
-        {dateDebut} - {dateFin}
+
+      {/* École */}
+      <p className="text-sm md:text-base text-[#795A3C] mb-2">🏫 {ecole}</p>
+
+ 
+      {/* Dates */}
+      <div className="flex flex-wrap gap-2 text-xs md:text-sm text-white/90 mb-3">
+        {dateDebut && dateBlock}
       </div>
+
+      {/* Domaine */}
       {domaine && (
-        <div className="text-[#795A3C] text-xs mb-2 font-josefin">
+        <span className="inline-block bg-[#795A3C] text-white px-3 py-1 rounded-full text-xs mb-3 w-fit">
           {domaine}
-        </div>
+        </span>
       )}
+
+      {/* Description */}
+      {description && description !== "..." && (
+        <p className="text-sm text-gray-700 mb-4 flex-1">{description}</p>
+      )}
+
+      {/* Lien */}
       {lien && (
         <a
           href={lien}
-          className="text-[#795A3C] text-sm underline mb-2"
           target="_blank"
           rel="noopener noreferrer"
+          className="mt-auto bg-[#795A3C] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#946B47] transition text-center text-sm md:text-base"
         >
-          Voir la formation
+          🔗 En savoir plus
         </a>
-      )}
-      {description && (
-        <p className="text-black text-base md:text-lg font-josefin text-center">
-          {description}
-        </p>
       )}
     </div>
   );

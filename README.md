@@ -114,8 +114,11 @@ Si vous souhaitez contribuer : fork, créez une branche feature, et proposez une
 
 ## 📬 Contact
 
-Pour toute question technique : consultez `cv_backend/controllers/contactController.js` ou envoyez un mail via le formulaire de contact.
+Laure Lavie
+📧 laure.lavie@gmail.com
+🔗 LinkedIn
+🐙 GitHub
 
 ---
 
-Merci d'avoir regardé ce projet — ce README reprend la direction artistique du site pour faciliter la cohérence visuelle entre code et présentation.
+Merci d'avoir regardé ce projet!

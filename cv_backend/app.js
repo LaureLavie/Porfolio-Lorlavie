@@ -33,6 +33,29 @@ app.use(
 
 app.use(express.json());
 
+// ROUTES JSON DIRECTES (lecture des fichiers data/)
+app.get('/api/json/formations', (req, res) => {
+  const data = require('./data/formations.json');
+  res.json(data);
+});
+
+app.get('/api/json/experiences', (req, res) => {
+  const data = require('./data/experiences.json');
+  res.json(data);
+});
+
+app.get('/api/json/projets', (req, res) => {
+  const data = require('./data/projets.json');
+  res.json(data);
+});
+
+app.get('/api/json/loisirs', (req, res) => {
+  const data = require('./data/loisirs.json');
+  res.json(data);
+});
+
+// Ces routes permettent d'afficher les données même si MongoDB est hors service.
+
 // Créer le dossier uploads s'il n'existe pas
 const uploadsDir = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadsDir)) {

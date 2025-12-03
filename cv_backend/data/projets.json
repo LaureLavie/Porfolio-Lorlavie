@@ -1,13 +1,59 @@
 [
   {
-    "nom": "Création d'une plateforme de réservation en ligne (sans paiement)'",
+    "nom": "Plateforme d'écriture et lecture immersive Immers'Write",
+    "dateDebut": "2025",
+    "dateFin": "",
+    "description": "Développement d'une plateforme d'écriture et lecture immersive et interactive. Projet personnel en pleine réalisation visant à créer une expérience d'écriture collaborative et immersive pour les auteurs et lecteurs. Application web moderne avec fonctionnalités interactives avancées.",
+    "lien": "https://github.com/LaureLavie/ImmersiveWrite",
+    "competence": "React, Node.js, Express, MongoDB, Full Stack, API RESTful, UI/UX",
+    "domaine": "Développement Web / Littérature Interactive / Innovation digitale",
+    "image": "../src/assets/images/logoImmersWrite.png",
+    "motsCles": [
+      "plateforme interactive",
+      "écriture collaborative",
+      "lecture immersive",
+      "projet en cours",
+      "application web",
+      "expérience utilisateur",
+      "innovation digitale",
+      "React",
+      "Full Stack"
+    ]
+  },
+  {
+    "nom": "Portfolio/CV Interactif",
+    "dateDebut": "aout 2025",
+    "dateFin": "/",
+    "description": "Conception et développement d'un portfolio/CV moderne, responsive et accessible avec une page d'administration pour gérer dynamiquement les contenus (formations, expériences, projets, loisirs, contact). Authentification JWT, CRUD complet, formulaire de contact avec envoi d'email, export de données. Design avec palette chaleureuse et organique.",
+    "lien": "https://github.com/LaureLavie/Porfolio-Lorlavie",
+    "competence": "React, Vite, Node.js, Express, API RESTful, JWT, CRUD, authentification, design responsive, UI/UX",
+    "domaine": "Développement Web / Design / Full Stack",
+    "image": "../src/assets/images/laure1.PNG",
+    "motsCles": [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express",
+      "API RESTful",
+      "JWT",
+      "CRUD",
+      "authentification",
+      "design responsive",
+      "UI/UX",
+      "portfolio interactif",
+      "back-office",
+      "Full Stack"
+    ]
+  },
+  {
+    "nom": "Création d'une plateforme de réservation en ligne (sans paiement)",
     "dateDebut": "Août 2025",
     "dateFin": "septembre 2025",
     "description": "Développement et déploiement d'un site de réservation en ligne",
-    "lien": "",
+    "lien": "https://gite-lorlavie.onrender.com/",
     "competence": "javascript, html, css, sass ",
     "domaine": "développement web, backend, frontend, design, creation",
-    "image": "../src/assets/images/roman1.png",
+    "image": "../src/assets/images/logo.jpg",
     "motsCles": [
       "développement web",
       "backend",
@@ -107,12 +153,12 @@
     "dateFin": "juin 2020",
     "description": "faire-part de mariage, plans de table, supports graphiques.",
     "lien": "",
-    "competence": "PAO, Graphisme",
+    "competence": "canva, Graphisme",
     "domaine": "Design / Communication",
     "image": "",
     "motsCles": [
       "création graphique",
-      "PAO",
+      "canva",
       "print design",
       "identité visuelle",
       "supports imprimés"

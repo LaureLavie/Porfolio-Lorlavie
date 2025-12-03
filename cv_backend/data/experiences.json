@@ -1,44 +1,72 @@
 [
   {
-    "poste": "Designer textile & Création",
-    "entreprise": "Lorlavie Creation",
-    "dateDebut": "septembre 2019",
+    "poste": "Développeuse Full Stack - Projet en cours",
+    "entreprise": "Projet Personnel - Immers'Write",
+    "dateDebut": "2025",
     "dateFin": "",
-    "description": "Auto-entrepreneuse: Création de mon entreprise de design textile, création et fabrication d'accessoires de mode",
-    "lien": "https://www.etsy.com/fr/shop/LorlavieCreation",
-    "secteur": "Design, Couture, Creation, Artisanat",
+    "description": "Développement d'une plateforme d'écriture et lecture immersive et interactive. Projet personnel en pleine réalisation visant à créer une expérience d'écriture collaborative et immersive pour les auteurs et lecteurs. Technologies en cours d'implémentation : application web moderne avec fonctionnalités interactives avancées.",
+    "lien": "https://github.com/LaureLavie/ImmersiveWrite",
+    "secteur": "Développement Web / Littérature Immersive et Interactive",
     "image": "",
     "motsCles": [
-      "design textile",
-      "création mode",
-      "accessoires de mode",
-      "auto-entrepreneur",
-      "artisanat"
+      "plateforme interactive",
+      "écriture immersive",
+      "lecture immersive",
+      "projet en cours",
+      "application web",
+      "expérience utilisateur",
+      "innovation digitale"
+    ]
+  },
+  {
+    "poste": "Développeuse Frontend & Backend",
+    "entreprise": "Projet Personnel - Portfolio/CV Interactif",
+    "dateDebut": "2025",
+    "dateFin": "",
+    "description": "Conception et développement d'un portfolio/CV moderne, responsive et accessible avec une page d'administration pour gérer dynamiquement les contenus (formations, expériences, projets, loisirs, contact). Authentification JWT, CRUD complet, formulaire de contact avec envoi d'email, export de données. Design avec palette chaleureuse et organique. Technologies : React (Vite), Node.js/Express, API RESTful, JWT, système d'envoi d'emails.",
+    "lien": "https://github.com/LaureLavie/Porfolio-Lorlavie",
+    "secteur": "Développement Web / Design",
+    "image": "",
+    "motsCles": [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express",
+      "API ",
+      "JWT",
+      "CRUD",
+      "authentification",
+      "design responsive",
+      "UI/UX",
+      "portfolio interactif",
+      "back-office"
     ]
   },
   {
     "poste": "Couturière",
-    "entreprise": "LARTIGUE 1910",
+    "entreprise": "Tissage Lartigue 1910",
     "dateDebut": "octobre 2023",
-    "dateFin": "Janvier 2025",
-    "description": "Assemblage des pièces de tissu tissé artisanalement, Réalisation des ourlets, surpiqûres et finitions, Couture d’articles textiles : nappes, sacs, tabliers, torchons, etc. Pose d’étiquettes, de biais et d’accessoires décoratifs, Contrôle qualité des produits finis, Utilisation de machines à coudre industrielles et entretien du matériel, Respect des standards esthétiques du linge basque traditionnel, Collaboration avec l’équipe design pour adapter les modèles, Participation à l’entretien du poste de travail",
+    "dateFin": "février 2025",
+    "description": "Assemblage des pièces de tissu tissé artisanalement, Réalisation des ourlets, surpiqûres et finitions, Couture d'articles textiles : nappes, sacs, tabliers, torchons, etc. Pose d'étiquettes, de biais et d'accessoires décoratifs, Contrôle qualité des produits finis, Utilisation de machines à coudre industrielles et entretien du matériel, Respect des standards esthétiques du linge basque traditionnel, Collaboration avec l'équipe design pour adapter les modèles, Participation à l'entretien du poste de travail, Opératrice couture et maintenance.",
     "lien": "https://www.lartigue1910.com/fr/",
-    "secteur": "Couture, Artisanat",
+    "secteur": "Couture, Artisanat, Textile basque",
     "image": "",
     "motsCles": [
       "couture artisanale",
       "tissu basque",
       "finition textile",
       "machine à coudre industrielle",
-      "qualité produit"
+      "qualité produit",
+      "maintenance",
+      "linge basque traditionnel"
     ]
   },
   {
     "poste": "Couturière",
     "entreprise": "APF Entreprises 64",
-    "dateDebut": "Février 2022",
-    "dateFin": "Mai 2023",
-    "description": "Lire et exploiter les consignes techniques, entretenir et régler les machines, assembler et finir les pièces, effectuer les contrôles qualité en cours et finaux.",
+    "dateDebut": "février 2022",
+    "dateFin": "juin 2023",
+    "description": "Lire et exploiter les consignes techniques, entretenir et régler les machines, assembler et finir les pièces, effectuer les contrôles qualité en cours et finaux. Opératrice couture, maintenance, Technicienne Broderie.",
     "lien": "https://apf-entreprises64.fr/",
     "secteur": "Industrie textile / Insertion professionnelle",
     "image": "",
@@ -47,34 +75,57 @@
       "réinsertion professionnelle",
       "contrôle qualité",
       "entretien machine",
-      "assemblage tissu"
+      "assemblage tissu",
+      "broderie",
+      "maintenance textile"
     ]
   },
   {
     "poste": "Enseignante Bilingue Anglais Cycle 1",
     "entreprise": "École Notre Dame Saint Joseph",
-    "dateDebut": "Septembre 2020",
-    "dateFin": "Juillet 2021",
-    "description": "Enseignement des mathématiques en anglais pour Moyenne et Grande Section, conception et animation du programme éducatif, gestion de classe, communication avec les familles.",
+    "dateDebut": "septembre 2020",
+    "dateFin": "juillet 2021",
+    "description": "Enseignement des mathématiques en anglais pour Moyenne Section (lundi-jeudi) et Grande Section (mardi-vendredi), conception et animation du programme éducatif, gestion de classe, communication avec les familles.",
     "lien": "https://ecole-ndsj.fr/",
     "secteur": "Éducation / Enseignement bilingue",
     "image": "",
     "motsCles": [
       "enseignement bilingue",
       "anglais",
+      "mathématiques",
       "éducation maternelle",
       "gestion de classe",
-      "programme éducatif"
+      "programme éducatif",
+      "pédagogie"
+    ]
+  },
+  {
+    "poste": "Designer textile & Création",
+    "entreprise": "Lorlavie Création",
+    "dateDebut": "septembre 2019",
+    "dateFin": "",
+    "description": "Auto-entrepreneuse: Création de mon entreprise de design textile, création et fabrication d'accessoires de mode. Design & Création artisanale : Fabrication d'accessoires de mode couture et designeuse textile.",
+    "lien": "https://www.etsy.com/fr/shop/LorlavieCreation",
+    "secteur": "Design, Couture, Création, Artisanat",
+    "image": "",
+    "motsCles": [
+      "design textile",
+      "création mode",
+      "accessoires de mode",
+      "auto-entrepreneur",
+      "artisanat",
+      "couture créative",
+      "micro-entreprise"
     ]
   },
   {
     "poste": "Chargée de communication – Stage",
-    "entreprise": "Tendance Sud",
-    "dateDebut": "Octobre 2018",
-    "dateFin": "Novembre 2018",
-    "description": "Élaboration d’une stratégie de communication, Rédaction d’un cahier, des charges, Conception et gestion de sites et blogs, Création de profils sur les réseaux, sociaux, Gestion éditoriale, Animation de communautés, Mise en place d’une campagne, publicitaire en ligne, Mesure et contrôle de la performance, Ajustement de la stratégie",
+    "entreprise": "Tendance Sud (Soupçons en Jurançon)",
+    "dateDebut": "octobre 2018",
+    "dateFin": "novembre 2018",
+    "description": "Community manager : communication de la structure sur les réseaux sociaux. Recherche de partenaires, Élaboration des dossiers, Contact d'attachés de presse. Élaboration d'une stratégie de communication, Rédaction d'un cahier des charges, Conception et gestion de sites et blogs, Création de profils sur les réseaux sociaux, Gestion éditoriale, Animation de communautés, Mise en place d'une campagne publicitaire en ligne, Mesure et contrôle de la performance, Ajustement de la stratégie.",
     "lien": "https://soupconsenjurancon.com/",
-    "secteur": "Communication / Événementiel ",
+    "secteur": "Communication / Événementiel",
     "image": "",
     "motsCles": [
       "stratégie digitale",
@@ -82,15 +133,17 @@
       "community management",
       "référencement SEO",
       "WordPress",
-      "réseaux sociaux"
+      "réseaux sociaux",
+      "attachés de presse",
+      "partenariats"
     ]
   },
   {
-    "poste": "Agent Commercial",
-    "entreprise": "Stéphane Plaza Immobilier",
+    "poste": "Agent Commercial Immobilier",
+    "entreprise": "Agence Stéphane Plaza Immobilier",
     "dateDebut": "juin 2017",
-    "dateFin": "décembre 2017",
-    "description": "Etude du marché immobilier, Prospection immobilière omnicanal, Promotion commerciale omnicanale de biens immobiliers, Analyse de la situation du client, Négociation immobilière, Information-conseil aux vendeurs, acquéreurs, bailleurs, loueurs, Réalisation d’une transaction immobilière",
+    "dateFin": "janvier 2018",
+    "description": "Auto-entrepreneuse. Prospection et suivi de prospections, création et suivi d'un portefeuille clients, Réalisation d'estimations immobilières, Négociation vendeur/acquéreur, Suivi et conseil auprès des clients, Réalisation de ventes immobilières. Étude du marché immobilier, Prospection immobilière omnicanal, Promotion commerciale omnicanale de biens immobiliers, Analyse de la situation du client, Négociation immobilière, Information-conseil aux vendeurs, acquéreurs, bailleurs, loueurs.",
     "lien": "https://www.stephaneplazaimmobilier.com/agences/oloron/",
     "secteur": "Immobilier",
     "image": "",
@@ -99,58 +152,50 @@
       "transaction immobilière",
       "analyse client",
       "vente immobilière",
-      "marché immobilier"
+      "marché immobilier",
+      "négociation",
+      "estimation immobilière",
+      "portefeuille clients"
     ]
   },
   {
-    "poste": "Animatrice syndicale",
-    "entreprise": "Syndicat Jeunes Agriculteurs 64",
+    "poste": "Animatrice Syndicale",
+    "entreprise": "Syndicat Jeunes Agriculteurs 64 (Chambre d'Agriculture Béarn)",
     "dateDebut": "mai 2016",
     "dateFin": "avril 2017",
-    "description": "Formaliser les informations utiles au fonctionnement de son secteur, Communiquer régulièrement à son équipe les informations utiles au fonctionnement de son secteur, Animer / participer à l’animation du territoire, l’animation d'une démarche qualité et d'amélioration continue au sein de l'équipe : Adapter et améliorer l’activité, les conditions de réalisation et l’environnement de travail des collaborateurs, Animer des actions de progrès de son secteur, l’encadrement, la gestion et l’animation de son groupe / équipe : Gérer les collaborateurs de l’équipe au quotidien, Évaluer les compétences de son équipe",
+    "description": "Animation de la structure (réunions, comités, groupe de travail, AG), gestion administrative et animation des dossiers syndicaux, Communication interne et externe. Formaliser les informations utiles au fonctionnement de son secteur, Communiquer régulièrement à son équipe les informations utiles au fonctionnement de son secteur, Animer/participer à l'animation du territoire, l'animation d'une démarche qualité et d'amélioration continue au sein de l'équipe : Adapter et améliorer l'activité, les conditions de réalisation et l'environnement de travail des collaborateurs, Animer des actions de progrès de son secteur, l'encadrement, la gestion et l'animation de son groupe/équipe : Gérer les collaborateurs de l'équipe au quotidien, Évaluer les compétences de son équipe.",
     "lien": "http://www.ja64.fr/",
-    "secteur": "Agriculture",
+    "secteur": "Agriculture / Syndicalisme agricole",
     "image": "",
     "motsCles": [
       "animation réseau",
-      "coordination d’équipe",
+      "coordination d'équipe",
       "agriculture locale",
       "qualité de service",
-      "projets territoriaux"
+      "projets territoriaux",
+      "gestion administrative",
+      "communication syndicale",
+      "management d'équipe"
     ]
   },
   {
-    "poste": "Animatrice et Coordinatrice de Réseau",
-    "entreprise": "Chambre d'agriculture Béarn Pays Basque",
+    "poste": "Animatrice Coordinatrice du Réseau Collectif Fermier 64",
+    "entreprise": "Chambre d'Agriculture Béarn",
     "dateDebut": "mars 2015",
     "dateFin": "mai 2016",
     "description": "Animation de projets collectifs et coordination entre 8 structures agricoles, Gestion administrative, Management et animation de groupes de travail et réunions, Recherche de partenariats, Communication interne et externe.",
     "lien": "https://www.collectiffermier64.fr/",
-    "secteur": "Agroalimentaire / Coopération",
+    "secteur": "Agroalimentaire / Coopération agricole",
     "image": "",
     "motsCles": [
       "projets collectifs",
       "animation territoriale",
       "partenariats agricoles",
       "coordination réseau",
-      "agriculture durable"
-    ]
-  },
-  {
-    "poste": "Chargée évènementielle",
-    "entreprise": "Université de Bretagne Sud",
-    "dateDebut": "Septembre 2013",
-    "dateFin": "Avril 2014",
-    "description": "Organisation d’un colloque scientifique international « Communication touristique »: Concevoir des actions de communication en interne et en externe, Créer et entretenir des relations avec les acteurs locaux & internationaux et partenaires, Communiquer avec l'ensemble des canaux d'information matériel ou immatériel, Réaliser le suivi budgétaire des dossiers, Concevoir le plan d’action du colloque, Piloter la logistique de la réalisation de l’événement, Réaliser le bilan du colloque et le suivi de l’après colloque.",
-    "lien": "https://vannes.uco.fr/fr/formations/droit-economie-gestion/master-tourisme-bretagne?destination=/fr/formations-vannes",
-    "secteur": "Enseignement supérieur / Événementiel scientifique",
-    "image": "",
-    "motsCles": [
-      "événementiel scientifique",
-      "organisation colloque",
-      "communication institutionnelle",
-      "logistique événementielle",
-      "relations presse"
+      "agriculture durable",
+      "gestion administrative",
+      "management collectif",
+      "structures agricoles"
     ]
   },
   {
@@ -167,67 +212,76 @@
       "valorisation territoire",
       "développement viticole",
       "stratégie touristique",
-      "promotion locale"
+      "promotion locale",
+      "diagnostic territorial"
     ]
   },
   {
-    "poste": "Assistante vendeuse",
-    "entreprise": "Maison des vins de Lacommande",
-    "dateDebut": "aout 2008",
-    "dateFin": "aout 2013",
-    "description": "Conseil, vente et dégustations de vins de Jurançon.",
-    "lien": "https://www.vins-jurancon.fr/page/13-vin-de-jurancon-la-maison-des-vins-et-la-vinotheque-des-vignerons-du-jurancon?srsltid=AfmBOoqdrCrqieBIEtfzscPbrBRq5mnIH5R7xZuXi-HVzd8zag7Dg4Qe",
-    "secteur": "Vins / Commerce",
+    "poste": "Chargée événementielle",
+    "entreprise": "Université de Bretagne Sud (Université Catholique de l'Ouest)",
+    "dateDebut": "septembre 2013",
+    "dateFin": "avril 2014",
+    "description": "Organisation d'un colloque scientifique international « Communication touristique » : Concevoir des actions de communication en interne et en externe, Créer et entretenir des relations avec les acteurs locaux & internationaux et partenaires, Communiquer avec l'ensemble des canaux d'information matériel ou immatériel, Réaliser le suivi budgétaire des dossiers, Concevoir le plan d'action du colloque, Piloter la logistique de la réalisation de l'événement, Réaliser le bilan du colloque et le suivi de l'après colloque.",
+    "lien": "https://vannes.uco.fr/fr/formations/droit-economie-gestion/master-tourisme-bretagne",
+    "secteur": "Enseignement supérieur / Événementiel scientifique",
     "image": "",
     "motsCles": [
-      "vente vin",
-      "dégustation",
-      "conseil client",
-      "commerce local",
-      "œnologie"
+      "événementiel scientifique",
+      "organisation colloque",
+      "communication institutionnelle",
+      "logistique événementielle",
+      "relations presse",
+      "budget événementiel",
+      "colloque international"
     ]
   },
   {
     "poste": "Assistante événementiel",
-    "entreprise": "Office de Tourisme Coeur de Béarn",
+    "entreprise": "Office de Tourisme Cœur de Béarn",
     "dateDebut": "avril 2013",
     "dateFin": "juillet 2013",
-    "description": "Assistance à l’élaboration du dossier ‘’qualité tourisme’’, Organisation d’un événement ‘’Festival des Partitions Bucoliques’’, élaboration de la communication: plan de communication et budget, élaborer la logistique, étude de marché et de faisabilité, promotion du festival: affiche, site internet/ mailing/ Emailing/, élaboration enquêtes de satisfaction/ analyse & suivi, proposition d';axes d'amélioration et de développement",
+    "description": "Assistance à l'élaboration du dossier 'qualité tourisme', Organisation d'un événement 'Festival des Partitions Bucoliques', élaboration de la communication : plan de communication et budget, élaborer la logistique, étude de marché et de faisabilité, promotion du festival : affiche, site internet/mailing/Emailing, élaboration enquêtes de satisfaction/analyse & suivi, proposition d'axes d'amélioration et de développement.",
     "lien": "https://www.coeurdebearn.com/",
-    "secteur": "Tourisme / Événementiel",
+    "secteur": "Tourisme / Événementiel culturel",
     "image": "",
     "motsCles": [
       "qualité tourisme",
       "événementiel culturel",
       "communication touristique",
       "mailing",
-      "logistique événement"
+      "logistique événement",
+      "festival culturel",
+      "enquêtes satisfaction",
+      "promotion événementielle"
     ]
   },
   {
-    "poste": "Oenotourisme - viti-vinicole",
+    "poste": "Œnotourisme - viti-vinicole",
     "entreprise": "Domaine Montesquiou",
     "dateDebut": "septembre 2011",
     "dateFin": "juin 2012",
-    "description": "Animation & promotion dans les salons & foires, Création d’un circuit oenotouristique autour du domaine, accueil des clients & commercialisation des vins, conseil & dégustation des vins, élaboration de vins: de la vendanges jusqu'à la mise en bouteille, travail dans les vignes",
+    "description": "Animation & promotion dans les salons & foires, Création d'un circuit œnotouristique autour du domaine, accueil des clients & commercialisation des vins, conseil & dégustation des vins, élaboration de vins : de la vendanges jusqu'à la mise en bouteille, travail dans les vignes.",
     "lien": "https://www.domaine-montesquiou.fr/",
-    "secteur": "Viticulture / Agriculture",
+    "secteur": "Viticulture / Agriculture / Œnotourisme",
     "image": "",
     "motsCles": [
       "animation salon",
       "circuit œnotouristique",
       "vinification",
       "dégustation vin",
-      "travail de vigne"
+      "travail de vigne",
+      "vendanges",
+      "commercialisation vin",
+      "accueil client"
     ]
   },
   {
     "poste": "Animatrice Technico-Commerciale",
-    "entreprise": "Epicerie Verte",
+    "entreprise": "L'Epicerie Verte",
     "dateDebut": "mai 2009",
     "dateFin": "juillet 2009",
-    "description": "Négociation fournisseurs, gestion de stock, marchandisage, communication, promotion, marketing.",
-    "lien": "https://magasins.lescomptoirsdelabio.fr/fr/les-comptoirs-de-la-bio-l'%C3%A9picerie-verte-oloron-105460",
+    "description": "Négociation fournisseurs, gestion de stock, merchandising, communication, promotion, marketing.",
+    "lien": "https://magasins.lescomptoirsdelabio.fr/",
     "secteur": "Distribution / Commerce bio",
     "image": "",
     "motsCles": [
@@ -235,14 +289,35 @@
       "gestion de stock",
       "négociation fournisseur",
       "promotion produit",
-      "marketing durable"
+      "marketing durable",
+      "merchandising",
+      "communication commerciale"
+    ]
+  },
+  {
+    "poste": "Assistante vendeuse",
+    "entreprise": "Maison des vins de Lacommande",
+    "dateDebut": "août 2008",
+    "dateFin": "août 2013",
+    "description": "Conseil, vente et dégustations de vins de Jurançon. Accueil client, conseil œnologique, animation dégustation.",
+    "lien": "https://www.vins-jurancon.fr/",
+    "secteur": "Vins / Commerce / Œnotourisme",
+    "image": "",
+    "motsCles": [
+      "vente vin",
+      "dégustation",
+      "conseil client",
+      "commerce local",
+      "œnologie",
+      "vins de Jurançon",
+      "accueil touristique"
     ]
   },
   {
     "poste": "Ouvrière viti-vinicole",
     "entreprise": "Domaine Bordenave",
-    "dateDebut": "2008-09",
-    "dateFin": "2008-11",
+    "dateDebut": "septembre 2008",
+    "dateFin": "novembre 2008",
     "description": "Vendanges à Jurançon, travail de vinification jusqu'à la mise en bouteille.",
     "lien": "",
     "secteur": "Viticulture / Agriculture",
@@ -252,24 +327,8 @@
       "vinification",
       "travail saisonnier",
       "mise en bouteille",
-      "production vin"
-    ]
-  },
-  {
-    "poste": "Ouvrière viti-vinicole",
-    "entreprise": "Domaine Zind Humbrecht",
-    "dateDebut": "mai 2007",
-    "dateFin": "juillet 2007",
-    "description": "Expérimentation viticole sur le Riesling, domaine biodynamique de 40 ha.",
-    "lien": "",
-    "secteur": "Viticulture / Biodynamie",
-    "image": "",
-    "motsCles": [
-      "viticulture biodynamique",
-      "expérimentation agricole",
-      "Riesling",
-      "éco-agriculture",
-      "vins naturels"
+      "production vin",
+      "vins de Jurançon"
     ]
   },
   {
@@ -286,24 +345,45 @@
       "sérigraphie",
       "production textile",
       "préparation support",
-      "chaîne graphique"
+      "chaîne graphique",
+      "industrie textile"
     ]
   },
   {
     "poste": "Œnologue & Laborantine",
-    "entreprise": "Laboratoire d’œnologie de Monein",
-    "dateDebut": "aout 2007",
-    "dateFin": "aout 2007",
+    "entreprise": "Laboratoire d'œnologie de Monein",
+    "dateDebut": "août 2007",
+    "dateFin": "août 2007",
     "description": "Inspection chez les producteurs de vins de Jurançon, dégustation et conseil, analyses biochimiques en laboratoire sur les échantillons de vin pendant 1 mois.",
-    "lien": "https://www.vins-jurancon.fr/page/13-vin-de-jurancon-la-maison-des-vins-et-la-vinotheque-des-vignerons-du-jurancon?srsltid=AfmBOorUb4TpE7tp8--GLRkWWLsu5cXShY0b4RjrfFN_WwSWsgez4eKQ",
-    "secteur": "Agroalimentaire / Œnologie",
+    "lien": "https://www.vins-jurancon.fr/",
+    "secteur": "Agroalimentaire / Œnologie / Laboratoire",
     "image": "",
     "motsCles": [
       "analyse vin",
       "conseil œnologique",
       "laboratoire œnologie",
       "vins de Jurançon",
-      "analyses biochimiques"
+      "analyses biochimiques",
+      "inspection viticole",
+      "contrôle qualité vin"
+    ]
+  },
+  {
+    "poste": "Ouvrière viti-vinicole",
+    "entreprise": "Domaine Zind Humbrecht",
+    "dateDebut": "mai 2007",
+    "dateFin": "juillet 2007",
+    "description": "Expérimentation viticole sur le Riesling, domaine biodynamique de 40 ha.",
+    "lien": "",
+    "secteur": "Viticulture / Biodynamie",
+    "image": "",
+    "motsCles": [
+      "viticulture biodynamique",
+      "expérimentation agricole",
+      "Riesling",
+      "éco-agriculture",
+      "vins naturels",
+      "agriculture biologique"
     ]
   }
 ]

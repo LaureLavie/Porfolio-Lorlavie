@@ -79,7 +79,7 @@ const Accueil = () => {
         {/* Titre de bienvenue */}
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-5xl font-bold text-[#795A3C] mb-4 font-josefin">
-            Bienvenue sur mon Portfolio
+            Bienvenue Dans Mon Monde
           </h1>
           <p className="text-lg md:text-xl text-[#946B47] font-josefin">
             Découvrez mes compétences, expériences et projets

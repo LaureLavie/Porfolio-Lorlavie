@@ -15,9 +15,9 @@ const Accueil = () => {
   useEffect(() => {
     setLoading(true);
     Promise.all([
-      fetch(`${API_URL}/experience`).then((res) => res.json()),
-      fetch(`${API_URL}/formation`).then((res) => res.json()),
-      fetch(`${API_URL}/projet`).then((res) => res.json()),
+      fetch(`${API_URL}/api/json/experiences`).then((res) => res.json()),
+      fetch(`${API_URL}/api/json/formations`).then((res) => res.json()),
+      fetch(`${API_URL}/api/json/projets`).then((res) => res.json()),
     ])
       .then(([exp, form, proj]) => {
         setExperiences(exp);

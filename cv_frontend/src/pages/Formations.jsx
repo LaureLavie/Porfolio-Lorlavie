@@ -10,7 +10,7 @@ const Formations = () => {
   const [formationsData, setFormationsData] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_URL}/formation`)
+    fetch(`${API_URL}/api/json/formations`)
       .then((res) => res.json())
       .then((data) => setFormationsData(data))
       .catch((err) => console.error("Erreur chargement formations :", err));
@@ -20,9 +20,9 @@ const Formations = () => {
     <div className="bg-white bg-[url('../src/assets/images/bg.png')] bg-cover bg-bottom-right min-h-screen flex flex-col">
       <Navbar />
 
-      <div className="flex-1 flex justify-center items-center pt-10">
-        {/* Colonne mascottes et menu latéral */}
-        <div className="sticky top-20 md:w-1/4 flex flex-col items-center py-10 self-start h-fit">
+      <div className="flex-1 flex flex-col md:flex-row justify-center md:items-center items-start pt-10">
+        {/* Colonne mascottes et menu latéral - mobile/tablette: top center; desktop: sticky left */}
+        <div className="w-full md:w-1/4 flex flex-col items-center py-6 md:py-10 md:self-start md:sticky md:top-20">
           <SideMascotteMenu
             mascotteTop="/src/assets/images/laure3.PNG"
             mascotteBottom="/src/assets/images/laure8.PNG"

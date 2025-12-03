@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AdminDashboard from "./pages/AdminDashboard";
 import Login from "./pages/Login";
@@ -15,6 +15,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Accueil />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<AdminDashboard />} />
@@ -24,6 +25,7 @@ function App() {
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/formations" element={<Formations />} />
           <Route path="/loisirs" element={<Loisirs />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </div>

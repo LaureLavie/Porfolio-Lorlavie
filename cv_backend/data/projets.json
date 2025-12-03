@@ -1,5 +1,22 @@
 [
   {
+    "nom": "Création d'une plateforme de réservation en ligne (sans paiement)'",
+    "dateDebut": "Août 2025",
+    "dateFin": "septembre 2025",
+    "description": "Développement et déploiement d'un site de réservation en ligne",
+    "lien": "",
+    "competence": "javascript, html, css, sass ",
+    "domaine": "développement web, backend, frontend, design, creation",
+    "image": "../src/assets/images/roman1.png",
+    "motsCles": [
+      "développement web",
+      "backend",
+      "frontend",
+      "seo",
+      "referencement"
+    ]
+  },
+  {
     "nom": "Écriture du roman 'L'Antre Deux Âmes'",
     "dateDebut": "janvier 2024",
     "dateFin": "septembre 2024",

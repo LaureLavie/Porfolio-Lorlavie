@@ -61,11 +61,11 @@ export default function Footer() {
             Adresse
           </h3>
           <div className="flex flex-col items-center sm:items-center font-semibold text-[#795A3C] text-sm md:text-base">
-            <img
+            {/* <img
               src="/src/assets/images/location.png"
               alt=""
               className="w-8 h-8 md:w-10 md:h-10 drop-shadow-lg mb-2"
-            />
+            /> */}
             <p className="text-center sm:text-left">
               3 rue Trey
               <br />

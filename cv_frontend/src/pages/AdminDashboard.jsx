@@ -46,16 +46,16 @@ const AdminDashboard = () => {
 
   // Charger les listes
   useEffect(() => {
-    fetch(`${API_URL}/formation`)
+    fetch(`${API_URL}/api/json/formations`)
       .then((res) => res.json())
       .then(setFormations);
-    fetch(`${API_URL}/experience`)
+    fetch(`${API_URL}/api/json/experiences`)
       .then((res) => res.json())
       .then(setExperiences);
-    fetch(`${API_URL}/projet`)
+    fetch(`${API_URL}/api/json/projets`)
       .then((res) => res.json())
       .then(setProjets);
-    fetch(`${API_URL}/loisir`)
+    fetch(`${API_URL}/api/json/loisirs`)
       .then((res) => res.json())
       .then(setLoisirs);
   }, []);
@@ -75,7 +75,7 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormFormation(false);
         setEditFormation(null);
-        fetch(`${API_URL}/formation`)
+        fetch(`${API_URL}/api/json/formations`)
           .then((res) => res.json())
           .then(setFormations);
       });
@@ -103,7 +103,7 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormExperience(false);
         setEditExperience(null);
-        fetch(`${API_URL}/experience`)
+        fetch(`${API_URL}/api/json/experiences`)
           .then((res) => res.json())
           .then(setExperiences);
       });
@@ -131,7 +131,7 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormProjet(false);
         setEditProjet(null);
-        fetch(`${API_URL}/projet`)
+        fetch(`${API_URL}/api/json/projets`)
           .then((res) => res.json())
           .then(setProjets);
       });
@@ -159,7 +159,7 @@ const AdminDashboard = () => {
       .then(() => {
         setShowFormLoisir(false);
         setEditLoisir(null);
-        fetch(`${API_URL}/loisir`)
+        fetch(`${API_URL}/api/json/loisirs`)
           .then((res) => res.json())
           .then(setLoisirs);
       });

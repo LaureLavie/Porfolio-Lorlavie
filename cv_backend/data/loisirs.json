@@ -75,6 +75,21 @@
     ]
   },
   {
+    "nom": "design & stylisme",
+    "niveau": "Intermédiaire",
+    "nbreAnnee": "5 ans",
+    "categorie": "Création artistique",
+    "image": "",
+    "description": "Autodictate",
+    "motsCles": [
+      "design couture",
+      "création textile",
+      "modèle sur mesure",
+      "création de patrons",
+      "création fait main"
+    ]
+  },
+  {
     "nom": "couture",
     "niveau": "Intermédiaire",
     "nbreAnnee": "5 ans",

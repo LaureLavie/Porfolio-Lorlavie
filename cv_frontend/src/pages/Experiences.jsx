@@ -12,7 +12,7 @@ export const Experiences = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${API_URL}/experience`)
+    fetch(`${API_URL}/api/json/experiences`)
       .then((res) => {
         if (!res.ok) throw new Error("Erreur de chargement");
         return res.json();
@@ -33,8 +33,8 @@ export const Experiences = () => {
       <Navbar />
 
       <div className="flex-1 flex flex-col lg:flex-row justify-center items-start pt-16 lg:pt-10">
-        {/* Colonne mascottes et menu latéral - Cachée sur mobile */}
-        <div className="hidden lg:flex sticky top-20 w-1/4 flex-col items-center py-20 self-start h-fit">
+       {/* Colonne mascottes et menu latéral - mobile/tablette: top center; desktop: sticky left */}
+       <div className="w-full md:w-1/4 flex flex-col items-center py-6 md:py-10 md:self-start md:sticky md:top-20">
           <SideMascotteMenu
             mascotteTop="/src/assets/images/laure1.PNG"
             mascotteBottom="/src/assets/images/laure7.PNG"

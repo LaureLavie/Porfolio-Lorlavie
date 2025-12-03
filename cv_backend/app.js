@@ -13,7 +13,7 @@ const experienceRoutes = require("./routes/ExperienceRoutes");
 const formationRoutes = require("./routes/FormationRoutes");
 const projetRoutes = require("./routes/ProjetRoutes");
 const loisirRoutes = require("./routes/LoisirRoutes");
-const exportRoutes = require("./routes/ExportRoutes");
+const exportRoutes = require("./routes/exportRoutes");
 
 const Experience = require("./models/Experience");
 const Formation = require("./models/Formation");
@@ -34,24 +34,44 @@ app.use(
 app.use(express.json());
 
 // ROUTES JSON DIRECTES (lecture des fichiers data/)
-app.get('/api/json/formations', (req, res) => {
-  const data = require('./data/formations.json');
-  res.json(data);
+app.get('/api/json/formations', async (req, res) => {
+  try {
+    const raw = await fs.promises.readFile(path.join(__dirname, 'data', 'formations.json'), 'utf8');
+    return res.json(JSON.parse(raw));
+  } catch (err) {
+    console.error('Erreur lecture formations.json', err);
+    return res.status(500).json({ error: 'Erreur lecture formations' });
+  }
 });
 
-app.get('/api/json/experiences', (req, res) => {
-  const data = require('./data/experiences.json');
-  res.json(data);
+app.get('/api/json/experiences', async (req, res) => {
+  try {
+    const raw = await fs.promises.readFile(path.join(__dirname, 'data', 'experiences.json'), 'utf8');
+    return res.json(JSON.parse(raw));
+  } catch (err) {
+    console.error('Erreur lecture experiences.json', err);
+    return res.status(500).json({ error: 'Erreur lecture experiences' });
+  }
 });
 
-app.get('/api/json/projets', (req, res) => {
-  const data = require('./data/projets.json');
-  res.json(data);
+app.get('/api/json/projets', async (req, res) => {
+  try {
+    const raw = await fs.promises.readFile(path.join(__dirname, 'data', 'projets.json'), 'utf8');
+    return res.json(JSON.parse(raw));
+  } catch (err) {
+    console.error('Erreur lecture projets.json', err);
+    return res.status(500).json({ error: 'Erreur lecture projets' });
+  }
 });
 
-app.get('/api/json/loisirs', (req, res) => {
-  const data = require('./data/loisirs.json');
-  res.json(data);
+app.get('/api/json/loisirs', async (req, res) => {
+  try {
+    const raw = await fs.promises.readFile(path.join(__dirname, 'data', 'loisirs.json'), 'utf8');
+    return res.json(JSON.parse(raw));
+  } catch (err) {
+    console.error('Erreur lecture loisirs.json', err);
+    return res.status(500).json({ error: 'Erreur lecture loisirs' });
+  }
 });
 
 // Ces routes permettent d'afficher les données même si MongoDB est hors service.

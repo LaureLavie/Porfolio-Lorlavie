@@ -1,13 +1,38 @@
 [
   {
-    "nom": "DFW FS",
-    "certification": "en cours",
+    "nom": "Conception Développement d'Applications IA",
+    "certification": "En Cours",
     "ecole": "Fabrique Numérique Paloise",
-    "dateDebut": "14 avril 2025",
-    "dateFin": "21 septembre 2025",
+    "dateDebut": "22 septembre 2025",
+    "dateFin": "31 mars 2027",
     "description": "...",
     "lien": "https://fabriquenumerique.fr/",
     "domaine": "Gestion de projet, WebDesign",
+    "image": "",
+    "motsCles": [
+      "développement",
+      "web",
+      "fullstack",
+      "webdesign",  
+      "UX UI design",
+      "responsive design",
+      "Github",   
+      "hébergement web",
+      "DevOps",
+      "Agile Scrum",
+      "gestion de projet numérique",
+      "déploiement"
+    ]
+  },
+  {
+    "nom": "Développement Web Full Stack",
+    "certification": "validée",
+    "ecole": "Fabrique Numérique Paloise",
+    "dateDebut": "14 avril 2025",
+    "dateFin": "19 septembre 2025",
+    "description": "...",
+    "lien": "https://fabriquenumerique.fr/",
+    "domaine": "backend/ frontend, développement web",
     "image": "",
     "motsCles": [
       "développement",
@@ -24,12 +49,10 @@
       "CSS",
       "UX UI design",
       "responsive design",
-      "Git",
+      "Github",
       "API REST",
       "hébergement web",
-      "DevOps",
       "Agile Scrum",
-      "gestion de projet numérique",
       "déploiement"
     ]
   },

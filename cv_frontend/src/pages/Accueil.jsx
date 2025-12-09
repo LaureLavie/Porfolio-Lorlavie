@@ -81,7 +81,38 @@ const Accueil = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-[#795A3C] mb-4 font-josefin">
             Bienvenue Dans Mon Monde
           </h1>
-          <p className="text-lg md:text-xl text-[#946B47] font-josefin">
+          <p className="text-lg md:text-xl text-[#795A3C] font-bold mb-2 font-josefin">
+          Je m'appelle Laure, et je suis développeuse web full stack junior.</p>
+          <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">Avant de vous raconter pourquoi vous devriez me rencontrer, </p>
+          <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">Laissez-moi vous planter le décor : depuis Avril 2025, le code HTML ressemblait pour moi à des hiéroglyphes égyptiens. </p>
+          <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">Aujourd'hui ? J'ai ma certification de Développeur Web Full Stack en poche (obtenue en octobre 2025), </p>
+          <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">
+et je développe des applications fonctionnelles avec les technologies modernes, les IA et une bonne dose de café.</p>
+
+        <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-bold font-josefin">Pourquoi moi ? (La vraie question)</p>
+        <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">Mon parcours n'est pas linéaire.</p>
+        <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">J'ai été : 
+          <ul className="list-disc list-inside mb-4 text-left text-[#946B47] max-w-xl mx-auto">
+            <li>animatrice syndicale (négociation et défense de positions)</li>
+            <li>agent immobilier (écoute client et résolution de problèmes)</li>
+            <li>enseignante bilingue (pédagogie et transmission)</li>
+            <li>designer textile et couturière (création de A à Z)</li>
+            <li>auteure (rigueur et structure)</li>
+          </ul>
+        </p>
+        <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">Chacun de ces métiers m'a appris quelque chose d'essentiel :</p>
+        <ul className="list-disc list-inside mb-4 text-left text-[#946B47] max-w-xl mx-auto">
+          <li>Négocier et défendre des idées → utile pour argumenter des choix techniques</li>
+          <li>Comprendre les besoins clients → crucial pour concevoir des interfaces UX/UI pertinentes</li>
+          <li>Expliquer simplement des concepts complexes → indispensable pour un code lisible et maintenable</li>
+          <li>Créer de A à Z → exactement ce que je fais aujourd'hui en développement</li>
+          <li>Structurer rigoureusement → la base d'une architecture logicielle solide</li>
+        </ul>
+        <p className="text-lg md:text-xl text-[#795A3C] mb-4 font-josefin">
+Résultat ? Le développement web, c'est finalement tous mes métiers réunis. </p>
+<p className="text-lg md:text-xl text-[#795A3C] mb-4 font-bold font-josefin">Et cette diversité, c'est ma force : je ne code pas juste des lignes, je comprends l'humain derrière l'écran.
+          </p>
+          <p className="text-3xl md:text-5xl font-bold text-[#795A3C] mb-4 font-josefin">
             Découvrez mes compétences, expériences et projets
           </p>
         </div>
@@ -93,7 +124,7 @@ const Accueil = () => {
         >
           <input
             type="text"
-            placeholder="Recherchez une compétence, un projet, une expérience..."
+            placeholder="Exemple : Développement, ..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full rounded-3xl px-6 md:px-12 py-4 md:py-5 bg-[#DAB692] text-[#795A3C] text-base md:text-xl shadow-2xl text-center font-josefin focus:outline-none focus:ring-4 focus:ring-[#946B47] placeholder-[#795A3C]/60"

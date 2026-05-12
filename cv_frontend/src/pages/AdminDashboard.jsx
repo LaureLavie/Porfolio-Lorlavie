@@ -6,7 +6,7 @@ import BoxExperience from "../components/BoxExperience";
 import BoxProjet from "../components/BoxProjet";
 import CardLoisir from "../components/CardLoisir";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "https://porfolio-lorlavie.onrender.com/api";
 
 const AdminDashboard = () => {
   // Formations

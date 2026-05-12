@@ -88,8 +88,6 @@ app.get('/api/json/loisirs', async (req, res) => {
   }
 });
 
-// Ces routes permettent d'afficher les données même si MongoDB est hors service.
-
 // Créer le dossier uploads s'il n'existe pas
 const uploadsDir = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadsDir)) {
@@ -159,13 +157,15 @@ app.get("/api/admin/dashboard/filtered", verifyToken, async (req, res) => {
 
 // Routes principales
 app.use("/api/auth", authRoutes);
-app.use("/api/admin/dashboard", adminDashboardRoutes);
 app.use("/api/contact", contactRoutes);
+app.use("/api/export", exportRoutes);
+
+// Routes CRUD (Accessibles pour l'admin)
+app.use("/api/admin/dashboard", adminDashboardRoutes);
 app.use("/api/experience", experienceRoutes);
 app.use("/api/formation", formationRoutes);
 app.use("/api/projet", projetRoutes);
 app.use("/api/loisir", loisirRoutes);
-app.use("/api/export", exportRoutes);
 
 const PORT = process.env.PORT || 3000;
 

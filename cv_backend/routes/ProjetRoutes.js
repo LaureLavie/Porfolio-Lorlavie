@@ -24,42 +24,34 @@ router.get("/", async (req, res) => {
   }
 });
 
-//POST
-router.post("/", async (req, res) => {
+// POST - Ajouter (Sécurisé)
+router.post("/", verifyToken, async (req, res) => {
   try {
-    const projet = new Projet(req.body);
-    await projet.save();
+    const projet = new Experience(req.body);
+    await Projet.save();
     res.json({ message: "Projet ajouté", projet });
   } catch (error) {
-    res.status(500).json({ message: "Erreur", error: error.message });
+    res.status(500).json({ message: "Erreur lors de l'ajout", error });
   }
 });
 
-//PUT
-router.put("/:id", async (req, res) => {
+// PUT - Modifier (Sécurisé)
+router.put("/:id", verifyToken, async (req, res) => {
   try {
-    const projet = await Projet.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-    });
-    res.json({
-      message: "Projet mis à jour",
-      projet,
-    });
+    const projet = await Projet.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.json({ message: "Projet mis à jour", projet });
   } catch (error) {
-    res.status(500).json({ message: "Erreur", error: error.message });
+    res.status(500).json({ message: "Erreur lors de la mise à jour" });
   }
 });
 
-//DELETE
-router.delete("/:id", async (req, res) => {
+// DELETE - Supprimer (Sécurisé)
+router.delete("/:id", verifyToken, async (req, res) => {
   try {
     await Projet.findByIdAndDelete(req.params.id);
-    res.json({
-      message: "Projet supprimé",
-    });
+    res.json({ message: "Projet supprimée" });
   } catch (error) {
-    res.status(500).json({ message: "Erreur", error: error.message });
+    res.status(500).json({ message: "Erreur lors de la suppression" });
   }
 });
-
 module.exports = router;

@@ -22,42 +22,35 @@ router2.get("/", async (req, res) => {
   }
 });
 
-//POST
-router2.post("/", async (req, res) => {
+// POST - Ajouter (Sécurisé)
+router.post("/", verifyToken, async (req, res) => {
   try {
     const loisir = new Loisir(req.body);
     await loisir.save();
     res.json({ message: "Loisir ajouté", loisir });
   } catch (error) {
-    res.status(500).json({ message: "Erreur", error: error.message });
+    res.status(500).json({ message: "Erreur lors de l'ajout", error });
   }
 });
 
-//PUT
-router2.put("/:id", async (req, res) => {
+// PUT - Modifier (Sécurisé)
+router.put("/:id", verifyToken, async (req, res) => {
   try {
-    const loisir = await Loisir.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-    });
-    res.json({
-      message: "Loisir mis à jour",
-      loisir,
-    });
+    const loisir = await Loisir.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.json({ message: "Loisir mis à jour", loisir });
   } catch (error) {
-    res.status(500).json({ message: "Erreur", error: error.message });
+    res.status(500).json({ message: "Erreur lors de la mise à jour" });
   }
 });
 
-//DELETE
-router2.delete("/:id", async (req, res) => {
+// DELETE - Supprimer (Sécurisé)
+router.delete("/:id", verifyToken, async (req, res) => {
   try {
     await Loisir.findByIdAndDelete(req.params.id);
-    res.json({
-      message: "Loisir supprimé",
-    });
+    res.json({ message: "Loisir supprimé" });
   } catch (error) {
-    res.status(500).json({ message: "Erreur", error: error.message });
+    res.status(500).json({ message: "Erreur lors de la suppression" });
   }
 });
 
-module.exports = router2;
+module.exports = router;

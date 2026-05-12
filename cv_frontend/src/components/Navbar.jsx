@@ -1,9 +1,14 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Vérification de la connexion
+  const isAuthenticated = !!localStorage.getItem("token");
 
   const navLinks = [
     { path: "/accueil", label: "Accueil", color: "bg-black" },
@@ -13,6 +18,12 @@ export default function Navbar() {
     { path: "/loisirs", label: "Loisirs", color: "bg-[#F9E5C6]" },
     { path: "/contact", label: "Contact", color: "bg-black" },
   ];
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setOpen(false);
+    navigate("/login");
+  };
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-lg">
@@ -55,6 +66,30 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          {/* Onglet ADMIN dynamique */}
+          <Link
+            to="/admin"
+            className={`px-4 py-2 rounded-full text-sm font-bold border-2 transition-all font-josefin ${
+              location.pathname === "/admin"
+                ? "bg-red-600 text-white border-red-600"
+                : "border-red-500 text-red-500 hover:bg-red-50"
+            }`}
+          >
+            Admin ⚙️
+          </Link>
+
+          {isAuthenticated && (
+            <button
+              onClick={handleLogout}
+              className="ml-2 p-2 text-gray-500 hover:text-red-600 transition-colors"
+              title="Déconnexion"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="Ref-logout-icon-path-or-simple-text" />
+                <span>🚪</span>
+              </svg>
+            </button>
+          )}
         </div>
 
         {/* Burger menu mobile */}

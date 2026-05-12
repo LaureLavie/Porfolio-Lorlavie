@@ -24,27 +24,35 @@ router.get("/", async (req, res) => {
   }
 });
 
-//POST
-router.post("/", async (req, res) => {
-  const formation = new Formation(req.body);
-  await formation.save();
-  res.json("Formation ajoutée");
+// POST - Ajouter (Sécurisé)
+router.post("/", verifyToken, async (req, res) => {
+  try {
+    const formation = new Formation(req.body);
+    await formation.save();
+    res.json({ message: "Formation ajoutée", formation });
+  } catch (error) {
+    res.status(500).json({ message: "Erreur lors de l'ajout", error });
+  }
 });
 
-//PUT
-router.put("/:id", async (req, res) => {
-  await Formation.findByIdAndUpdate(req.params.id, req.body);
-  res.json({
-    message: "Formation mis à jour",
-  });
+// PUT - Modifier (Sécurisé)
+router.put("/:id", verifyToken, async (req, res) => {
+  try {
+    const formation = await Formation.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.json({ message: "Formation mise à jour", formation });
+  } catch (error) {
+    res.status(500).json({ message: "Erreur lors de la mise à jour" });
+  }
 });
 
-//DELETE
-router.delete("/:id", async (req, res) => {
-  await Formation.findByIdAndDelete(req.params.id);
-  res.json({
-    message: "Formation supprimée",
-  });
+// DELETE - Supprimer (Sécurisé)
+router.delete("/:id", verifyToken, async (req, res) => {
+  try {
+    await Formation.findByIdAndDelete(req.params.id);
+    res.json({ message: "Formation supprimée" });
+  } catch (error) {
+    res.status(500).json({ message: "Erreur lors de la suppression" });
+  }
 });
 
 module.exports = router;

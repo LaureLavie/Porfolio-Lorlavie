@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const app = express();
 const verifyToken= require("../middlewares/auth");
+const router = express.Router();
 
 app.get("/api/projets", (req, res) => {
   fs.readFile(

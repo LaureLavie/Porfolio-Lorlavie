@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Formation = require("../models/Formation");
+const verifyToken= require("../middlewares/auth")
 
 //GET
 router.get("/", async (req, res) => {

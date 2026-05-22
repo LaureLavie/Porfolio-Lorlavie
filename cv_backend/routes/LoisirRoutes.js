@@ -1,6 +1,7 @@
 const express = require("express");
 const router2 = express.Router();
 const Loisir = require("../models/Loisir");
+const verifyToken= require("../middlewares/auth");
 
 //GET
 router2.get("/", async (req, res) => {

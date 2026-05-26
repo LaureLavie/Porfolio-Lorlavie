@@ -26,7 +26,7 @@ router.get("/", async (req, res) => {
 });
 
 // POST - Ajouter (Sécurisé)
-router.post("/", verifyToken, async (req, res) => {
+router.post("", verifyToken, async (req, res) => {
   try {
     const projet = new Projet(req.body);
     await projet.save();

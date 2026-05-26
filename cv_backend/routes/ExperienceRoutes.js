@@ -4,7 +4,7 @@ const Experience = require("../models/Experience");
 const verifyToken= require("../middlewares/auth");
 
 //GET
-router.get("/", async (req, res) => {
+router.get("", async (req, res) => {
   try {
     const { entreprise, domaine, sort, search } = req.query;
 

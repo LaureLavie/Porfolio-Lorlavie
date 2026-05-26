@@ -4,7 +4,7 @@ const Formation = require("../models/Formation");
 const verifyToken= require("../middlewares/auth")
 
 //GET
-router.get("/", async (req, res) => {
+router.get("", async (req, res) => {
   try {
     const { certification, domaine, sort, search } = req.query;
 

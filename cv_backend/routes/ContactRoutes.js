@@ -4,7 +4,7 @@ const Contact = require("../models/Contact");
 const { sendContactMail } = require("../controllers/contactController");
 
 //GET - récupérer le contact
-router.get("/", async (req, res) => {
+router.get("", async (req, res) => {
   const contact = await Contact.findOne();
   res.json(contact);
 });

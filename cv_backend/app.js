@@ -165,15 +165,12 @@ app.get("/api/admin/dashboard/filtered", verifyToken, async (req, res) => {
 app.use("/auth", authRoutes);
 
 // exposer les routes publiques sous /api/json/...
-app.use("/api/json/experiences", experienceRoutes);
-app.use("/api/json/formations", formationRoutes);
-app.use("/api/json/projets", projetRoutes);
-app.use("/api/json/loisirs", loisirRoutes);
+app.use("/api/json/experiences/", experienceRoutes);
+app.use("/api/json/formations/", formationRoutes);
+app.use("/api/json/projets/", projetRoutes);
+app.use("/api/json/loisirs/", loisirRoutes);
 
-app.get("/api/json/experiences", (req, res) => res.redirect("/api/json/experiences/"));
-app.get("/api/json/formations", (req, res) => res.redirect("/api/json/formations/"));
-app.get("/api/json/projets", (req, res) => res.redirect("/api/json/projets/"));
-app.get("/api/json/loisirs", (req, res) => res.redirect("/api/json/loisirs/"));
+
 
 // dashboard/admin (sécurisé)
 app.use("/api/admin/dashboard", adminDashboardRoutes);

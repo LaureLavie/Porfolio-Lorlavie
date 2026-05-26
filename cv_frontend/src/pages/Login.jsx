@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const API_URL = import.meta.env.VITE_API_URL|| "https://porfolio-lorlavie.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL|| "https://lorlavie.onrender.com";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -105,7 +105,7 @@ export default function Login() {
             {loading ? "⏳ Connexion..." : "✅ Se connecter"}
           </button>
 
-          <p className="text-center text-[#795A3C] text-sm">
+         /*<p className="text-center text-[#795A3C] text-sm">
             Pas encore de compte ?{" "}
             <Link
               to="/register"
@@ -113,7 +113,8 @@ export default function Login() {
             >
               S'inscrire
             </Link>
-          </p>
+          </p>*/
+          
         </form>
       </div>
 

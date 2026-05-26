@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-const API_URL = import.meta.env.VITE_API_URL || "https://porfolio-lorlavie.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL || "https://lorlavie.onrender.com";
 
 const AdminDashboard = () => {
   // Formations

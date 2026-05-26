@@ -24,7 +24,7 @@ const verifyToken = require("./middlewares/auth");
 const app = express();
 
 // Configuration CORS
-const allowedOrigins = (process.env.CLIENT_URLS || process.env.CLIENT_URL || "")
+const allowedOrigins = ("https://porfolio-lorlavie.onrender.com"  || process.env.CLIENT_URL || "")
   .split(",")
   .map((s) => s.trim())
   .filter(Boolean);
@@ -128,7 +128,7 @@ app.use("/uploads", express.static("uploads"));
 // Route pour upload d'image
 app.post("/api/upload", verifyToken, upload.single("image"), (req, res) => {
     if (!req.file) {
-      return res.status(400).json({ error: "Aucun fichier uploadé" });
+      return res.status(400).json({ error: "Aucun fichier uploadé"});
     }
   // baseUrl : utiliser process.env.API_URL si défini, sinon construire dynamiquement
     const baseUrl = process.env.API_URL || `${req.protocol}://${req.get("host")}`;
@@ -138,7 +138,7 @@ app.post("/api/upload", verifyToken, upload.single("image"), (req, res) => {
 
 // Route pour le tableau de bord admin avec filtres
 app.get("/api/admin/dashboard/filtered", verifyToken, async (req, res) => {
-  const { categorieExperience, certificationFormation, categorieProjet } =
+  const { categorieExperience, certificationFormation, categorieProjet, categorieLoisir } =
     req.query;
 
   try {
@@ -151,8 +151,11 @@ app.get("/api/admin/dashboard/filtered", verifyToken, async (req, res) => {
     const projets = await Projet.find({
       ...(categorieProjet && { categorie: categorieProjet }),
     });
+    const loisirs = await Loisir.find({
+      ...(categorieLoisir && { categorie: categorieLoisir }),
+    });
 
-    res.json({ experiences, formations, projets });
+    res.json({ experiences, formations, projets, loisirs });
   } catch (error) {
     res.status(500).json({ error: "Erreur serveur" });
   }

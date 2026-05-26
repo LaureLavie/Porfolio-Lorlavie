@@ -4,7 +4,7 @@ const Loisir = require("../models/Loisir");
 const verifyToken= require("../middlewares/auth");
 
 //GET
-router2.get("/", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const { categorie, niveau, search } = req.query;
 

@@ -46,6 +46,7 @@ app.use(
 );
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // ROUTES JSON DIRECTES (lecture des fichiers data/)
 app.get('/api/json/formations', async (req, res) => {
@@ -157,17 +158,20 @@ app.get("/api/admin/dashboard/filtered", verifyToken, async (req, res) => {
   }
 });
 
-// Routes principales
-app.use("/api/auth", authRoutes);
-app.use("/api/contact", contactRoutes);
-app.use("/api/export", exportRoutes);
+// routes
+app.use("/auth", authRoutes);
 
-// Routes CRUD (Accessibles pour l'admin)
+// exposer les routes publiques sous /api/json/...
+app.use("/api/json/experiences", experienceRoutes);
+app.use("/api/json/formations", formationRoutes);
+app.use("/api/json/projets", projetRoutes);
+app.use("/api/json/loisirs", loisirRoutes);
+
+// dashboard/admin (sécurisé)
 app.use("/api/admin/dashboard", adminDashboardRoutes);
-app.use("/api/experience", experienceRoutes);
-app.use("/api/formation", formationRoutes);
-app.use("/api/projet", projetRoutes);
-app.use("/api/loisir", loisirRoutes);
+
+// contact
+app.use("/api/contact", contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 

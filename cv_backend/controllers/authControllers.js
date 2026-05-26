@@ -56,6 +56,7 @@ const login = async (req, res) => {
     if (!isMatch) {
       return res.status(401).json({ message: "Identifiants incorrects" });
     }
+    
 
     // Créer le token JWT
     const token = jwt.sign(
@@ -64,22 +65,16 @@ const login = async (req, res) => {
       { expiresIn: "24h" } // Augmenté à 24h
     );
 
-    res.status(200).json({
-      message: "Connexion réussie",
-      token: token, // Pas besoin du préfixe "Bearer" ici
-      admin: {
-        id: admin._id,
-        username: admin.username,
-        email: admin.email,
-      },
+    res.json({
+      message: "Authentification réussie",
+      admin: { id: admin._id, username: admin.username, email: admin.email },
+      token,
     });
   } catch (error) {
     console.error("Erreur login:", error);
-    res.status(500).json({
-      message: "Erreur Serveur",
-      error: error.message,
-    });
+    res.status(500).json({ message: "Erreur serveur", error: error.message });
   }
+};
 };
 
 const logout = async (req, res) => {

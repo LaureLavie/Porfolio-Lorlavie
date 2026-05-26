@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import CardFormation from "../components/CardFormation";
-import BoxExperience from "../components/BoxExperience";
-import BoxProjet from "../components/BoxProjet";
-import CardLoisir from "../components/CardLoisir";
-
-const API_URL = import.meta.env.VITE_API_URL || "https://porfolio-lorlavie.onrender.com/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://porfolio-lorlavie.onrender.com";
 
 const AdminDashboard = () => {
   // Formations

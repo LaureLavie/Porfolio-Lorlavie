@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const API_URL = import.meta.env.VITE_API_URL || "https://porfolio-lorlavie.onrender.com/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://porfolio-lorlavie.onrender.com";
 
 export default function Register() {
   const navigate = useNavigate();

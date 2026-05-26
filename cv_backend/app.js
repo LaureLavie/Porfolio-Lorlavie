@@ -7,13 +7,13 @@ const path = require("path");
 const fs = require("fs");
 
 const authRoutes = require("./routes/AuthRoutes");
-const adminDashboardRoutes = require("./routes/adminDashboardRoutes");
+const adminDashboardRoutes = require("./routes/AdminDashboardRoutes");
 const contactRoutes = require("./routes/ContactRoutes");
 const experienceRoutes = require("./routes/ExperienceRoutes");
 const formationRoutes = require("./routes/FormationRoutes");
 const projetRoutes = require("./routes/ProjetRoutes");
 const loisirRoutes = require("./routes/LoisirRoutes");
-const exportRoutes = require("./routes/exportRoutes");
+const exportRoutes = require("./routes/ExportRoutes");
 
 const Experience = require("./models/Experience");
 const Formation = require("./models/Formation");
@@ -126,12 +126,14 @@ app.use("/uploads", express.static("uploads"));
 
 // Route pour upload d'image
 app.post("/api/upload", verifyToken, upload.single("image"), (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({ error: "Aucun fichier uploadé" });
-  }
-  const imageUrl = `${process.env.API_URL}/uploads/${req.file.filename}`;
-  res.json({ url: imageUrl });
-});
+    if (!req.file) {
+      return res.status(400).json({ error: "Aucun fichier uploadé" });
+    }
+  // baseUrl : utiliser process.env.API_URL si défini, sinon construire dynamiquement
+    const baseUrl = process.env.API_URL || `${req.protocol}://${req.get("host")}`;
+    const imageUrl = `${baseUrl}/uploads/${req.file.filename}`;
+    res.json({ url: imageUrl });
+    });
 
 // Route pour le tableau de bord admin avec filtres
 app.get("/api/admin/dashboard/filtered", verifyToken, async (req, res) => {

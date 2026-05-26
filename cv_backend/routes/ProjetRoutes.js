@@ -28,8 +28,8 @@ router.get("/", async (req, res) => {
 // POST - Ajouter (Sécurisé)
 router.post("/", verifyToken, async (req, res) => {
   try {
-    const projet = new Projet (req.body);
-    await Projet.save();
+    const projet = new Projet(req.body);
+    await projet.save();
     res.json({ message: "Projet ajouté", projet });
   } catch (error) {
     res.status(500).json({ message: "Erreur lors de l'ajout", error });

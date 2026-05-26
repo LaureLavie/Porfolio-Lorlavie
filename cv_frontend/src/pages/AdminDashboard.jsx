@@ -30,7 +30,7 @@ const AdminDashboard = () => {
   // Chargement initial
   useEffect(() => {
     const token = localStorage.getItem("token");
-    fetch(`${API_URL}/admin/dashboard`, {
+    fetch(`${API_URL}/api/admin/dashboard`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
     })
